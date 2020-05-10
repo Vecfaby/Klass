@@ -245,11 +245,27 @@
     <Compile Include="FormVneurochnaya.Designer.cs">
       <DependentUpon>FormVneurochnaya.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formzapisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formzapisi.Designer.cs">
+      <DependentUpon>Formzapisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormZhurnal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormZhurnal.Designer.cs">
       <DependentUpon>FormZhurnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlassDaSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KlassDaSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KlassDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KlassDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="KlassDatSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -389,6 +405,12 @@
     <EmbeddedResource Include="FormVedomost9.resx">
       <DependentUpon>FormVedomost9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVneurochnaya.resx">
+      <DependentUpon>FormVneurochnaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formzapisi.resx">
+      <DependentUpon>Formzapisi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormZhurnal.resx">
       <DependentUpon>FormZhurnal.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +438,28 @@
     <EmbeddedResource Include="Stud9.resx">
       <DependentUpon>Stud9.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="KlassDaSet.xsc">
+      <DependentUpon>KlassDaSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDaSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KlassDaSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KlassDaSet.xss">
+      <DependentUpon>KlassDaSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDataSet.xsc">
+      <DependentUpon>KlassDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KlassDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KlassDataSet.xss">
+      <DependentUpon>KlassDataSet.xsd</DependentUpon>
+    </None>
     <None Include="KlassDatSet.xsc">
       <DependentUpon>KlassDatSet.xsd</DependentUpon>
     </None>

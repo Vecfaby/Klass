@@ -41,9 +41,19 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.klassDaSet = new Klass.KlassDaSet();
+            this.zhurnalTBBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.zhurnal_TBTableAdapter1 = new Klass.KlassDaSetTableAdapters.zhurnal_TBTableAdapter();
+            this.klassDataSet = new Klass.KlassDataSet();
+            this.zhurnalTBBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.zhurnal_TBTableAdapter2 = new Klass.KlassDataSetTableAdapters.zhurnal_TBTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // klassDSet
@@ -105,7 +115,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.zhurnal_TBDataGridView.DataSource = this.zhurnal_TBBindingSource;
+            this.zhurnal_TBDataGridView.DataSource = this.zhurnalTBBindingSource1;
             this.zhurnal_TBDataGridView.Location = new System.Drawing.Point(501, 33);
             this.zhurnal_TBDataGridView.Name = "zhurnal_TBDataGridView";
             this.zhurnal_TBDataGridView.RowHeadersWidth = 51;
@@ -185,6 +195,34 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // klassDaSet
+            // 
+            this.klassDaSet.DataSetName = "KlassDaSet";
+            this.klassDaSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // zhurnalTBBindingSource
+            // 
+            this.zhurnalTBBindingSource.DataMember = "zhurnal_TB";
+            this.zhurnalTBBindingSource.DataSource = this.klassDaSet;
+            // 
+            // zhurnal_TBTableAdapter1
+            // 
+            this.zhurnal_TBTableAdapter1.ClearBeforeFill = true;
+            // 
+            // klassDataSet
+            // 
+            this.klassDataSet.DataSetName = "KlassDataSet";
+            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // zhurnalTBBindingSource1
+            // 
+            this.zhurnalTBBindingSource1.DataMember = "zhurnal_TB";
+            this.zhurnalTBBindingSource1.DataSource = this.klassDataSet;
+            // 
+            // zhurnal_TBTableAdapter2
+            // 
+            this.zhurnal_TBTableAdapter2.ClearBeforeFill = true;
+            // 
             // FormZhurnal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,6 +239,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -219,5 +261,11 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button button1;
+        private KlassDaSet klassDaSet;
+        private System.Windows.Forms.BindingSource zhurnalTBBindingSource;
+        private KlassDaSetTableAdapters.zhurnal_TBTableAdapter zhurnal_TBTableAdapter1;
+        private KlassDataSet klassDataSet;
+        private System.Windows.Forms.BindingSource zhurnalTBBindingSource1;
+        private KlassDataSetTableAdapters.zhurnal_TBTableAdapter zhurnal_TBTableAdapter2;
     }
 }

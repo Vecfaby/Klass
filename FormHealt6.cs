@@ -19,6 +19,8 @@ namespace Klass
 
         private void FormHealt6_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.karta_health6". При необходимости она может быть перемещена или удалена.
+            this.karta_health6TableAdapter1.Fill(this.klassDaSet.karta_health6);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.karta_health6". При необходимости она может быть перемещена или удалена.
             this.karta_health6TableAdapter.Fill(this.klassDSet.karta_health6);
 
@@ -26,7 +28,7 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            karta_health6TableAdapter.Update(klassDSet);
+            karta_health6TableAdapter1.Update(klassDaSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 

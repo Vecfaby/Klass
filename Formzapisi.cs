@@ -10,30 +10,31 @@ using System.Windows.Forms;
 
 namespace Klass
 {
-    public partial class FormVneurochnaya : Form
+    public partial class Formzapisi : Form
     {
-        public FormVneurochnaya()
+        public Formzapisi()
         {
             InitializeComponent();
         }
 
-        private void FormVneurochnaya_Load(object sender, EventArgs e)
+        private void Formzapisi_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.vneurochnaya_deyatelnost". При необходимости она может быть перемещена или удалена.
-            this.vneurochnaya_deyatelnostTableAdapter.Fill(this.klassDSet.vneurochnaya_deyatelnost);
-           
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter1.Fill(this.klassDaSet.Users);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter.Fill(this.klassDSet.Users);
 
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            vneurochnaya_deyatelnostTableAdapter.Update(klassDSet);
+            usersTableAdapter1.Update(klassDaSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
         {
-            vneDataGridView.Rows.RemoveAt(vneDataGridView.CurrentCell.RowIndex);
+            usersDataGridView.Rows.RemoveAt(usersDataGridView.CurrentCell.RowIndex);
             MessageBox.Show("Запись удалена из базы данных");
         }
 

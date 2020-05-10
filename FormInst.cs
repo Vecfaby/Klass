@@ -19,6 +19,8 @@ namespace Klass
 
         private void FormInst_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.instruktion". При необходимости она может быть перемещена или удалена.
+            this.instruktionTableAdapter1.Fill(this.klassDaSet.instruktion);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.instruktion". При необходимости она может быть перемещена или удалена.
             this.instruktionTableAdapter.Fill(this.klassDSet.instruktion);
 
@@ -26,13 +28,13 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            instruktionTableAdapter.Update(klassDSet);
+            instruktionTableAdapter1.Update(klassDaSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
         {
-            zhurnal_TBDataGridView.Rows.RemoveAt(zhurnal_TBDataGridView.CurrentCell.RowIndex);
+            instDataGridView.Rows.RemoveAt(instDataGridView.CurrentCell.RowIndex);
             MessageBox.Show("Запись удалена из базы данных");
         }
 

@@ -58,6 +58,7 @@
             this.buttonzapisi.TabIndex = 32;
             this.buttonzapisi.Text = "Учетные записи";
             this.buttonzapisi.UseVisualStyleBackColor = false;
+            this.buttonzapisi.Click += new System.EventHandler(this.buttonzapisi_Click);
             // 
             // buttonZhur
             // 

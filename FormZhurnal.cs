@@ -27,6 +27,10 @@ namespace Klass
 
         private void FormZhurnal_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.zhurnal_TB". При необходимости она может быть перемещена или удалена.
+            this.zhurnal_TBTableAdapter2.Fill(this.klassDataSet.zhurnal_TB);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.zhurnal_TB". При необходимости она может быть перемещена или удалена.
+            this.zhurnal_TBTableAdapter1.Fill(this.klassDaSet.zhurnal_TB);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.zhurnal_TB". При необходимости она может быть перемещена или удалена.
             this.zhurnal_TBTableAdapter.Fill(this.klassDSet.zhurnal_TB);
 
@@ -34,7 +38,7 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            zhurnal_TBTableAdapter.Update(klassDSet);
+            zhurnal_TBTableAdapter2.Update(klassDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 

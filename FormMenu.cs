@@ -52,5 +52,14 @@ namespace Klass
             vn.Show();
             this.Hide();
         }
+
+        private void buttonzapisi_Click(object sender, EventArgs e)
+        {
+            Formzapisi z = new Formzapisi();
+            z.Left = this.Left;
+            z.Top = this.Top;
+            z.Show();
+            this.Hide();
+        }
     }
 }
