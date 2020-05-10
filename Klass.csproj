@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80E3A343-F1EB-421B-943B-EE2B655EE815}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Klass</RootNamespace>
+    <AssemblyName>Klass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassIniDataBase.cs" />
+    <Compile Include="FormAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuto.Designer.cs">
+      <DependentUpon>FormAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHealt5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHealt5.Designer.cs">
+      <DependentUpon>FormHealt5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHealt6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHealt6.Designer.cs">
+      <DependentUpon>FormHealt6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHealt7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHealt7.Designer.cs">
+      <DependentUpon>FormHealt7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHealt8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHealt8.Designer.cs">
+      <DependentUpon>FormHealt8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHealt9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHealt9.Designer.cs">
+      <DependentUpon>FormHealt9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInst.Designer.cs">
+      <DependentUpon>FormInst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosechaemost5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosechaemost5.Designer.cs">
+      <DependentUpon>FormPosechaemost5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosechaemost6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosechaemost6.Designer.cs">
+      <DependentUpon>FormPosechaemost6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosechaemost7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosechaemost7.Designer.cs">
+      <DependentUpon>FormPosechaemost7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosechaemost8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosechaemost8.Designer.cs">
+      <DependentUpon>FormPosechaemost8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosechaemost9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosechaemost9.Designer.cs">
+      <DependentUpon>FormPosechaemost9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReg.Designer.cs">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoditeli6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoditeli6.Designer.cs">
+      <DependentUpon>FormRoditeli6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoditeli5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoditeli5.Designer.cs">
+      <DependentUpon>FormRoditeli5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoditeli7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoditeli7.Designer.cs">
+      <DependentUpon>FormRoditeli7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoditeli8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoditeli8.Designer.cs">
+      <DependentUpon>FormRoditeli8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoditeli9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoditeli9.Designer.cs">
+      <DependentUpon>FormRoditeli9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRuk.Designer.cs">
+      <DependentUpon>FormRuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRukEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRukEdit.Designer.cs">
+      <DependentUpon>FormRukEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent5.Designer.cs">
+      <DependentUpon>FormStudent5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent6.Designer.cs">
+      <DependentUpon>FormStudent6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent7.Designer.cs">
+      <DependentUpon>FormStudent7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent8.Designer.cs">
+      <DependentUpon>FormStudent8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent9.Designer.cs">
+      <DependentUpon>FormStudent9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudents.Designer.cs">
+      <DependentUpon>FormStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVedomost5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVedomost5.Designer.cs">
+      <DependentUpon>FormVedomost5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVedomost6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVedomost6.Designer.cs">
+      <DependentUpon>FormVedomost6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVedomost7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVedomost7.Designer.cs">
+      <DependentUpon>FormVedomost7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVedomost8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVedomost8.Designer.cs">
+      <DependentUpon>FormVedomost8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVedomost9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVedomost9.Designer.cs">
+      <DependentUpon>FormVedomost9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVneurochnaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVneurochnaya.Designer.cs">
+      <DependentUpon>FormVneurochnaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZhurnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZhurnal.Designer.cs">
+      <DependentUpon>FormZhurnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlassDatSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KlassDatSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KlassDSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KlassDSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stud5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud5.Designer.cs">
+      <DependentUpon>Stud5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stud6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud6.Designer.cs">
+      <DependentUpon>Stud6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stud7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud7.Designer.cs">
+      <DependentUpon>Stud7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stud8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud8.Designer.cs">
+      <DependentUpon>Stud8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stud9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud9.Designer.cs">
+      <DependentUpon>Stud9.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAuto.resx">
+      <DependentUpon>FormAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHealt5.resx">
+      <DependentUpon>FormHealt5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHealt6.resx">
+      <DependentUpon>FormHealt6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHealt7.resx">
+      <DependentUpon>FormHealt7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHealt8.resx">
+      <DependentUpon>FormHealt8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHealt9.resx">
+      <DependentUpon>FormHealt9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInst.resx">
+      <DependentUpon>FormInst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosechaemost5.resx">
+      <DependentUpon>FormPosechaemost5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosechaemost6.resx">
+      <DependentUpon>FormPosechaemost6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosechaemost7.resx">
+      <DependentUpon>FormPosechaemost7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosechaemost8.resx">
+      <DependentUpon>FormPosechaemost8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosechaemost9.resx">
+      <DependentUpon>FormPosechaemost9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReg.resx">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoditeli5.resx">
+      <DependentUpon>FormRoditeli5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoditeli6.resx">
+      <DependentUpon>FormRoditeli6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoditeli7.resx">
+      <DependentUpon>FormRoditeli7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoditeli8.resx">
+      <DependentUpon>FormRoditeli8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoditeli9.resx">
+      <DependentUpon>FormRoditeli9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRuk.resx">
+      <DependentUpon>FormRuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRukEdit.resx">
+      <DependentUpon>FormRukEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent5.resx">
+      <DependentUpon>FormStudent5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent6.resx">
+      <DependentUpon>FormStudent6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent7.resx">
+      <DependentUpon>FormStudent7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent8.resx">
+      <DependentUpon>FormStudent8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent9.resx">
+      <DependentUpon>FormStudent9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudents.resx">
+      <DependentUpon>FormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVedomost5.resx">
+      <DependentUpon>FormVedomost5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVedomost6.resx">
+      <DependentUpon>FormVedomost6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVedomost7.resx">
+      <DependentUpon>FormVedomost7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVedomost8.resx">
+      <DependentUpon>FormVedomost8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVedomost9.resx">
+      <DependentUpon>FormVedomost9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZhurnal.resx">
+      <DependentUpon>FormZhurnal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Stud5.resx">
+      <DependentUpon>Stud5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud6.resx">
+      <DependentUpon>Stud6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud7.resx">
+      <DependentUpon>Stud7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud8.resx">
+      <DependentUpon>Stud8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud9.resx">
+      <DependentUpon>Stud9.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KlassDatSet.xsc">
+      <DependentUpon>KlassDatSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDatSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KlassDatSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KlassDatSet.xss">
+      <DependentUpon>KlassDatSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDSet.xsc">
+      <DependentUpon>KlassDSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KlassDSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KlassDSet.xss">
+      <DependentUpon>KlassDSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
