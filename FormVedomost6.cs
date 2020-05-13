@@ -44,5 +44,22 @@ namespace Klass
             k6.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double sum = 0, aver = 0;
+            int count = 0;
+            foreach (DataGridViewCell cell in vedomost6DataGridView.SelectedCells)
+            {
+                double value = 0;
+                if (cell.Value != null & double.TryParse(cell.Value.ToString(), out value))
+                {
+                    sum += value;
+                    count++;
+                }
+            }
+            aver = sum / count;
+            MessageBox.Show(aver.ToString(), "Средняя оценка ");
+        }
     }
 }

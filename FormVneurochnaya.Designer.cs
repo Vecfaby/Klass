@@ -33,17 +33,18 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.vneDataGridView = new System.Windows.Forms.DataGridView();
+            this.vneurochnayadeyatelnostBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klassDSet = new Klass.KlassDSet();
             this.instruktionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.instruktionTableAdapter = new Klass.KlassDSetTableAdapters.instruktionTableAdapter();
-            this.vneurochnayadeyatelnostBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vneurochnaya_deyatelnostTableAdapter = new Klass.KlassDSetTableAdapters.vneurochnaya_deyatelnostTableAdapter();
             this.idstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namekruzhkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.vneDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vneurochnayadeyatelnostBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vneurochnayadeyatelnostBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDellete
@@ -90,12 +91,17 @@
             this.idstudentDataGridViewTextBoxColumn,
             this.namekruzhkaDataGridViewTextBoxColumn});
             this.vneDataGridView.DataSource = this.vneurochnayadeyatelnostBindingSource;
-            this.vneDataGridView.Location = new System.Drawing.Point(557, 22);
+            this.vneDataGridView.Location = new System.Drawing.Point(557, 50);
             this.vneDataGridView.Name = "vneDataGridView";
             this.vneDataGridView.RowHeadersWidth = 51;
             this.vneDataGridView.RowTemplate.Height = 24;
-            this.vneDataGridView.Size = new System.Drawing.Size(379, 529);
+            this.vneDataGridView.Size = new System.Drawing.Size(379, 501);
             this.vneDataGridView.TabIndex = 72;
+            // 
+            // vneurochnayadeyatelnostBindingSource
+            // 
+            this.vneurochnayadeyatelnostBindingSource.DataMember = "vneurochnaya_deyatelnost";
+            this.vneurochnayadeyatelnostBindingSource.DataSource = this.klassDSet;
             // 
             // klassDSet
             // 
@@ -111,11 +117,6 @@
             // 
             this.instruktionTableAdapter.ClearBeforeFill = true;
             // 
-            // vneurochnayadeyatelnostBindingSource
-            // 
-            this.vneurochnayadeyatelnostBindingSource.DataMember = "vneurochnaya_deyatelnost";
-            this.vneurochnayadeyatelnostBindingSource.DataSource = this.klassDSet;
-            // 
             // vneurochnaya_deyatelnostTableAdapter
             // 
             this.vneurochnaya_deyatelnostTableAdapter.ClearBeforeFill = true;
@@ -123,7 +124,7 @@
             // idstudentDataGridViewTextBoxColumn
             // 
             this.idstudentDataGridViewTextBoxColumn.DataPropertyName = "id_student";
-            this.idstudentDataGridViewTextBoxColumn.HeaderText = "id_student";
+            this.idstudentDataGridViewTextBoxColumn.HeaderText = "Код ученика";
             this.idstudentDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idstudentDataGridViewTextBoxColumn.Name = "idstudentDataGridViewTextBoxColumn";
             this.idstudentDataGridViewTextBoxColumn.Width = 125;
@@ -131,28 +132,42 @@
             // namekruzhkaDataGridViewTextBoxColumn
             // 
             this.namekruzhkaDataGridViewTextBoxColumn.DataPropertyName = "name_kruzhka";
-            this.namekruzhkaDataGridViewTextBoxColumn.HeaderText = "name_kruzhka";
+            this.namekruzhkaDataGridViewTextBoxColumn.HeaderText = "Название кружка";
             this.namekruzhkaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.namekruzhkaDataGridViewTextBoxColumn.Name = "namekruzhkaDataGridViewTextBoxColumn";
             this.namekruzhkaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(522, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(408, 40);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Внеурочная деятельность";
             // 
             // FormVneurochnaya
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonDellete);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.vneDataGridView);
             this.Name = "FormVneurochnaya";
-            this.Text = "FormVneurochnaya";
+            this.Text = "Внеурочная деятельность";
             this.Load += new System.EventHandler(this.FormVneurochnaya_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vneDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vneurochnayadeyatelnostBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vneurochnayadeyatelnostBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -168,5 +183,6 @@
         private KlassDSetTableAdapters.vneurochnaya_deyatelnostTableAdapter vneurochnaya_deyatelnostTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idstudentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namekruzhkaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label2;
     }
 }

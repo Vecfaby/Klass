@@ -19,6 +19,8 @@ namespace Klass
 
         private void Stud9_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.vedomost9". При необходимости она может быть перемещена или удалена.
+            this.vedomost9TableAdapter.Fill(this.klassDataSet.vedomost9);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students9". При необходимости она может быть перемещена или удалена.
             this.students9TableAdapter.Fill(this.klassDSet.students9);
 
@@ -30,6 +32,7 @@ namespace Klass
             r9.Left = this.Left;
             r9.Top = this.Top;
             r9.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -38,6 +41,7 @@ namespace Klass
             v9.Left = this.Left;
             v9.Top = this.Top;
             v9.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +50,7 @@ namespace Klass
             h9.Left = this.Left;
             h9.Top = this.Top;
             h9.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +59,7 @@ namespace Klass
             p9.Left = this.Left;
             p9.Top = this.Top;
             p9.Show();
+            this.Hide();
         }
 
         private void buttonPoisk_Click(object sender, EventArgs e)
@@ -62,6 +68,7 @@ namespace Klass
             s9.Left = this.Left;
             s9.Top = this.Top;
             s9.Show();
+            this.Hide();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)

@@ -46,7 +46,7 @@
             // 
             loginLabel.AutoSize = true;
             loginLabel.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            loginLabel.Location = new System.Drawing.Point(208, 174);
+            loginLabel.Location = new System.Drawing.Point(233, 183);
             loginLabel.Name = "loginLabel";
             loginLabel.Size = new System.Drawing.Size(100, 29);
             loginLabel.TabIndex = 21;
@@ -56,7 +56,7 @@
             // 
             passwordLabel.AutoSize = true;
             passwordLabel.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            passwordLabel.Location = new System.Drawing.Point(208, 215);
+            passwordLabel.Location = new System.Drawing.Point(233, 224);
             passwordLabel.Name = "passwordLabel";
             passwordLabel.Size = new System.Drawing.Size(114, 29);
             passwordLabel.TabIndex = 22;
@@ -66,7 +66,7 @@
             // 
             roleLabel.AutoSize = true;
             roleLabel.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            roleLabel.Location = new System.Drawing.Point(208, 256);
+            roleLabel.Location = new System.Drawing.Point(233, 265);
             roleLabel.Name = "roleLabel";
             roleLabel.Size = new System.Drawing.Size(163, 29);
             roleLabel.TabIndex = 23;
@@ -87,9 +87,9 @@
             // loginTextBox
             // 
             this.loginTextBox.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginTextBox.Location = new System.Drawing.Point(430, 168);
+            this.loginTextBox.Location = new System.Drawing.Point(455, 177);
             this.loginTextBox.Name = "loginTextBox";
-            this.loginTextBox.Size = new System.Drawing.Size(166, 35);
+            this.loginTextBox.Size = new System.Drawing.Size(220, 35);
             this.loginTextBox.TabIndex = 28;
             // 
             // roleTextBox
@@ -98,24 +98,24 @@
             this.roleTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.roleTextBox.BackColor = System.Drawing.Color.White;
             this.roleTextBox.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roleTextBox.Location = new System.Drawing.Point(430, 250);
+            this.roleTextBox.Location = new System.Drawing.Point(455, 259);
             this.roleTextBox.Name = "roleTextBox";
-            this.roleTextBox.Size = new System.Drawing.Size(166, 35);
+            this.roleTextBox.Size = new System.Drawing.Size(220, 35);
             this.roleTextBox.TabIndex = 27;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordTextBox.Location = new System.Drawing.Point(430, 209);
+            this.passwordTextBox.Location = new System.Drawing.Point(455, 218);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(166, 35);
+            this.passwordTextBox.Size = new System.Drawing.Size(220, 35);
             this.passwordTextBox.TabIndex = 26;
             // 
             // buttonEnter
             // 
             this.buttonEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonEnter.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEnter.Location = new System.Drawing.Point(237, 336);
+            this.buttonEnter.Location = new System.Drawing.Point(255, 330);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(308, 58);
             this.buttonEnter.TabIndex = 25;
@@ -128,17 +128,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.Location = new System.Drawing.Point(44, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(761, 80);
             this.label1.TabIndex = 24;
             this.label1.Text = "Для того чтобы зарегестрироваться в программе\r\n                         заполните" +
-    " поля";
+    " данные";
             // 
             // FormReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(866, 515);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.loginTextBox);
@@ -150,7 +151,7 @@
             this.Controls.Add(passwordLabel);
             this.Controls.Add(roleLabel);
             this.Name = "FormReg";
-            this.Text = "FormReg";
+            this.Text = "Регистрация";
             this.Load += new System.EventHandler(this.FormReg_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

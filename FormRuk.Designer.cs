@@ -61,6 +61,7 @@
             this.name_shcoolTextBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             id_klassLabel = new System.Windows.Forms.Label();
             name_rukLabel = new System.Windows.Forms.Label();
             phoneLabel = new System.Windows.Forms.Label();
@@ -77,7 +78,7 @@
             // 
             id_klassLabel.AutoSize = true;
             id_klassLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            id_klassLabel.Location = new System.Drawing.Point(97, 64);
+            id_klassLabel.Location = new System.Drawing.Point(92, 103);
             id_klassLabel.Name = "id_klassLabel";
             id_klassLabel.Size = new System.Drawing.Size(78, 24);
             id_klassLabel.TabIndex = 1;
@@ -88,7 +89,7 @@
             // 
             name_rukLabel.AutoSize = true;
             name_rukLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            name_rukLabel.Location = new System.Drawing.Point(97, 102);
+            name_rukLabel.Location = new System.Drawing.Point(92, 141);
             name_rukLabel.Name = "name_rukLabel";
             name_rukLabel.Size = new System.Drawing.Size(324, 24);
             name_rukLabel.TabIndex = 3;
@@ -98,7 +99,7 @@
             // 
             phoneLabel.AutoSize = true;
             phoneLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            phoneLabel.Location = new System.Drawing.Point(97, 137);
+            phoneLabel.Location = new System.Drawing.Point(92, 176);
             phoneLabel.Name = "phoneLabel";
             phoneLabel.Size = new System.Drawing.Size(109, 24);
             phoneLabel.TabIndex = 5;
@@ -108,7 +109,7 @@
             // 
             adresLabel.AutoSize = true;
             adresLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            adresLabel.Location = new System.Drawing.Point(97, 178);
+            adresLabel.Location = new System.Drawing.Point(92, 217);
             adresLabel.Name = "adresLabel";
             adresLabel.Size = new System.Drawing.Size(80, 24);
             adresLabel.TabIndex = 7;
@@ -118,7 +119,7 @@
             // 
             id_shcoolLabel.AutoSize = true;
             id_shcoolLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            id_shcoolLabel.Location = new System.Drawing.Point(97, 216);
+            id_shcoolLabel.Location = new System.Drawing.Point(92, 255);
             id_shcoolLabel.Name = "id_shcoolLabel";
             id_shcoolLabel.Size = new System.Drawing.Size(162, 24);
             id_shcoolLabel.TabIndex = 9;
@@ -128,7 +129,7 @@
             // 
             name_shcoolLabel.AutoSize = true;
             name_shcoolLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            name_shcoolLabel.Location = new System.Drawing.Point(97, 254);
+            name_shcoolLabel.Location = new System.Drawing.Point(92, 293);
             name_shcoolLabel.Name = "name_shcoolLabel";
             name_shcoolLabel.Size = new System.Drawing.Size(194, 24);
             name_shcoolLabel.TabIndex = 11;
@@ -315,7 +316,7 @@
             // 
             this.id_klassTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klass_rukBindingSource, "id_klass", true));
             this.id_klassTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.id_klassTextBox.Location = new System.Drawing.Point(481, 61);
+            this.id_klassTextBox.Location = new System.Drawing.Point(476, 100);
             this.id_klassTextBox.Name = "id_klassTextBox";
             this.id_klassTextBox.Size = new System.Drawing.Size(225, 32);
             this.id_klassTextBox.TabIndex = 2;
@@ -324,7 +325,7 @@
             // 
             this.name_rukTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klass_rukBindingSource, "name_ruk", true));
             this.name_rukTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.name_rukTextBox.Location = new System.Drawing.Point(481, 99);
+            this.name_rukTextBox.Location = new System.Drawing.Point(476, 138);
             this.name_rukTextBox.Name = "name_rukTextBox";
             this.name_rukTextBox.Size = new System.Drawing.Size(225, 32);
             this.name_rukTextBox.TabIndex = 4;
@@ -333,7 +334,7 @@
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klass_rukBindingSource, "phone", true));
             this.phoneTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.phoneTextBox.Location = new System.Drawing.Point(481, 137);
+            this.phoneTextBox.Location = new System.Drawing.Point(476, 176);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(225, 32);
             this.phoneTextBox.TabIndex = 6;
@@ -342,7 +343,7 @@
             // 
             this.adresTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klass_rukBindingSource, "adres", true));
             this.adresTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.adresTextBox.Location = new System.Drawing.Point(481, 175);
+            this.adresTextBox.Location = new System.Drawing.Point(476, 214);
             this.adresTextBox.Name = "adresTextBox";
             this.adresTextBox.Size = new System.Drawing.Size(225, 32);
             this.adresTextBox.TabIndex = 8;
@@ -351,7 +352,7 @@
             // 
             this.id_shcoolTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klass_rukBindingSource, "id_shcool", true));
             this.id_shcoolTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.id_shcoolTextBox.Location = new System.Drawing.Point(481, 213);
+            this.id_shcoolTextBox.Location = new System.Drawing.Point(476, 252);
             this.id_shcoolTextBox.Name = "id_shcoolTextBox";
             this.id_shcoolTextBox.Size = new System.Drawing.Size(225, 32);
             this.id_shcoolTextBox.TabIndex = 10;
@@ -360,7 +361,7 @@
             // 
             this.name_shcoolTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.klass_rukBindingSource, "name_shcool", true));
             this.name_shcoolTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.name_shcoolTextBox.Location = new System.Drawing.Point(481, 251);
+            this.name_shcoolTextBox.Location = new System.Drawing.Point(476, 290);
             this.name_shcoolTextBox.Name = "name_shcoolTextBox";
             this.name_shcoolTextBox.Size = new System.Drawing.Size(225, 32);
             this.name_shcoolTextBox.TabIndex = 12;
@@ -389,11 +390,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(187, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(380, 40);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "Классные руководители";
+            // 
             // FormRuk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(id_klassLabel);
@@ -410,7 +424,7 @@
             this.Controls.Add(this.name_shcoolTextBox);
             this.Controls.Add(this.klass_rukBindingNavigator);
             this.Name = "FormRuk";
-            this.Text = "FormRuk";
+            this.Text = "Классные руководители";
             this.Load += new System.EventHandler(this.FormRuk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassDatSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klass_rukBindingSource)).EndInit();
@@ -449,5 +463,6 @@
         private System.Windows.Forms.TextBox name_shcoolTextBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -34,9 +34,8 @@
             this.zhurnal_TBTableAdapter = new Klass.KlassDSetTableAdapters.zhurnal_TBTableAdapter();
             this.tableAdapterManager = new Klass.KlassDSetTableAdapters.TableAdapterManager();
             this.zhurnal_TBDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zhurnalTBBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDataSet = new Klass.KlassDataSet();
             this.buttonDellete = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
@@ -44,16 +43,17 @@
             this.klassDaSet = new Klass.KlassDaSet();
             this.zhurnalTBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.zhurnal_TBTableAdapter1 = new Klass.KlassDaSetTableAdapters.zhurnal_TBTableAdapter();
-            this.klassDataSet = new Klass.KlassDataSet();
-            this.zhurnalTBBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.zhurnal_TBTableAdapter2 = new Klass.KlassDataSetTableAdapters.zhurnal_TBTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // klassDSet
@@ -123,29 +123,15 @@
             this.zhurnal_TBDataGridView.Size = new System.Drawing.Size(432, 449);
             this.zhurnal_TBDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
+            // zhurnalTBBindingSource1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_klass";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_klass";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
+            this.zhurnalTBBindingSource1.DataMember = "zhurnal_TB";
+            this.zhurnalTBBindingSource1.DataSource = this.klassDataSet;
             // 
-            // dataGridViewTextBoxColumn2
+            // klassDataSet
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_instruk";
-            this.dataGridViewTextBoxColumn2.HeaderText = "id_instruk";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "date_instruk";
-            this.dataGridViewTextBoxColumn3.HeaderText = "date_instruk";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            this.klassDataSet.DataSetName = "KlassDataSet";
+            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // buttonDellete
             // 
@@ -209,24 +195,39 @@
             // 
             this.zhurnal_TBTableAdapter1.ClearBeforeFill = true;
             // 
-            // klassDataSet
-            // 
-            this.klassDataSet.DataSetName = "KlassDataSet";
-            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // zhurnalTBBindingSource1
-            // 
-            this.zhurnalTBBindingSource1.DataMember = "zhurnal_TB";
-            this.zhurnalTBBindingSource1.DataSource = this.klassDataSet;
-            // 
             // zhurnal_TBTableAdapter2
             // 
             this.zhurnal_TBTableAdapter2.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_klass";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Класс";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_instruk";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Код инструктажа";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "date_instruk";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Дата инструктажа";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // FormZhurnal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDellete);
@@ -239,10 +240,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnal_TBDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zhurnalTBBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,9 +255,6 @@
         private KlassDSetTableAdapters.zhurnal_TBTableAdapter zhurnal_TBTableAdapter;
         private KlassDSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView zhurnal_TBDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Button buttonDellete;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonBack;
@@ -267,5 +265,8 @@
         private KlassDataSet klassDataSet;
         private System.Windows.Forms.BindingSource zhurnalTBBindingSource1;
         private KlassDataSetTableAdapters.zhurnal_TBTableAdapter zhurnal_TBTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

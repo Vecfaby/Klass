@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Klass
 {
     public partial class FormHealt5 : Form
     {
+        
         public FormHealt5()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace Klass
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
+        
         {
             karta_health5DataGridView.Rows.RemoveAt(karta_health5DataGridView.CurrentCell.RowIndex);
             MessageBox.Show("Запись удалена из базы данных");

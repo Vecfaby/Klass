@@ -19,6 +19,10 @@ namespace Klass
 
         private void Stud6_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.students6". При необходимости она может быть перемещена или удалена.
+            this.students6TableAdapter2.Fill(this.klassDaSet.students6);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students6". При необходимости она может быть перемещена или удалена.
+            this.students6TableAdapter1.Fill(this.klassDataSet.students6);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students6". При необходимости она может быть перемещена или удалена.
             this.students6TableAdapter.Fill(this.klassDSet.students6);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students5". При необходимости она может быть перемещена или удалена.
@@ -32,6 +36,7 @@ namespace Klass
             r6.Left = this.Left;
             r6.Top = this.Top;
             r6.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -40,6 +45,7 @@ namespace Klass
             v6.Left = this.Left;
             v6.Top = this.Top;
             v6.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,6 +54,7 @@ namespace Klass
             h6.Left = this.Left;
             h6.Top = this.Top;
             h6.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +63,7 @@ namespace Klass
             p6.Left = this.Left;
             p6.Top = this.Top;
             p6.Show();
+            this.Hide();
         }
 
         private void buttonPoisk_Click(object sender, EventArgs e)
@@ -64,6 +72,7 @@ namespace Klass
             s6.Left = this.Left;
             s6.Top = this.Top;
             s6.Show();
+            this.Hide();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)

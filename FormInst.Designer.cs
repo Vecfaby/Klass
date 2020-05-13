@@ -39,14 +39,15 @@
             this.idinstrukDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numberinstrukDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameinstrukDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.klassDaSet = new Klass.KlassDaSet();
             this.instruktionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDaSet = new Klass.KlassDaSet();
             this.instruktionTableAdapter1 = new Klass.KlassDaSetTableAdapters.instruktionTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDellete
@@ -118,7 +119,7 @@
             // idinstrukDataGridViewTextBoxColumn
             // 
             this.idinstrukDataGridViewTextBoxColumn.DataPropertyName = "id_instruk";
-            this.idinstrukDataGridViewTextBoxColumn.HeaderText = "id_instruk";
+            this.idinstrukDataGridViewTextBoxColumn.HeaderText = "Код инструктажа";
             this.idinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idinstrukDataGridViewTextBoxColumn.Name = "idinstrukDataGridViewTextBoxColumn";
             this.idinstrukDataGridViewTextBoxColumn.Width = 125;
@@ -126,7 +127,7 @@
             // numberinstrukDataGridViewTextBoxColumn
             // 
             this.numberinstrukDataGridViewTextBoxColumn.DataPropertyName = "number_instruk";
-            this.numberinstrukDataGridViewTextBoxColumn.HeaderText = "number_instruk";
+            this.numberinstrukDataGridViewTextBoxColumn.HeaderText = "Номер инструктажа";
             this.numberinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numberinstrukDataGridViewTextBoxColumn.Name = "numberinstrukDataGridViewTextBoxColumn";
             this.numberinstrukDataGridViewTextBoxColumn.Width = 125;
@@ -134,43 +135,58 @@
             // nameinstrukDataGridViewTextBoxColumn
             // 
             this.nameinstrukDataGridViewTextBoxColumn.DataPropertyName = "name_instruk";
-            this.nameinstrukDataGridViewTextBoxColumn.HeaderText = "name_instruk";
+            this.nameinstrukDataGridViewTextBoxColumn.HeaderText = "Название инструктажа";
             this.nameinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameinstrukDataGridViewTextBoxColumn.Name = "nameinstrukDataGridViewTextBoxColumn";
             this.nameinstrukDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // klassDaSet
-            // 
-            this.klassDaSet.DataSetName = "KlassDaSet";
-            this.klassDaSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // instruktionBindingSource1
             // 
             this.instruktionBindingSource1.DataMember = "instruktion";
             this.instruktionBindingSource1.DataSource = this.klassDaSet;
             // 
+            // klassDaSet
+            // 
+            this.klassDaSet.DataSetName = "KlassDaSet";
+            this.klassDaSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // instruktionTableAdapter1
             // 
             this.instruktionTableAdapter1.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(614, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(213, 40);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Инструктажи";
             // 
             // FormInst
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.instDataGridView);
             this.Controls.Add(this.buttonDellete);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormInst";
-            this.Text = "FormInst";
+            this.Text = "Инструктажи";
             this.Load += new System.EventHandler(this.FormInst_Load);
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instruktionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -182,11 +198,12 @@
         private System.Windows.Forms.BindingSource instruktionBindingSource;
         private KlassDSetTableAdapters.instruktionTableAdapter instruktionTableAdapter;
         private System.Windows.Forms.DataGridView instDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idinstrukDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numberinstrukDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameinstrukDataGridViewTextBoxColumn;
         private KlassDaSet klassDaSet;
         private System.Windows.Forms.BindingSource instruktionBindingSource1;
         private KlassDaSetTableAdapters.instruktionTableAdapter instruktionTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idinstrukDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numberinstrukDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameinstrukDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }

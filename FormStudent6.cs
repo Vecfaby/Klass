@@ -93,7 +93,7 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            students6TableAdapter1.Update(klassDaSet);
+            students6TableAdapter2.Update(klassDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
 
@@ -108,6 +108,8 @@ namespace Klass
 
         private void FormStudent6_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students6". При необходимости она может быть перемещена или удалена.
+            this.students6TableAdapter2.Fill(this.klassDataSet.students6);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.students6". При необходимости она может быть перемещена или удалена.
             this.students6TableAdapter1.Fill(this.klassDaSet.students6);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students6". При необходимости она может быть перемещена или удалена.

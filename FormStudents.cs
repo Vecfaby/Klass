@@ -28,6 +28,12 @@ namespace Klass
 
         private void FormStudents_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students9". При необходимости она может быть перемещена или удалена.
+            this.students9TableAdapter1.Fill(this.klassDataSet.students9);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students8". При необходимости она может быть перемещена или удалена.
+            this.students8TableAdapter1.Fill(this.klassDataSet.students8);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students6". При необходимости она может быть перемещена или удалена.
+            this.students6TableAdapter1.Fill(this.klassDataSet.students6);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students9". При необходимости она может быть перемещена или удалена.
             this.students9TableAdapter.Fill(this.klassDSet.students9);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students8". При необходимости она может быть перемещена или удалена.
@@ -288,6 +294,11 @@ namespace Klass
             me.Top = this.Top;
             me.Show();
             this.Hide();
+        }
+
+        private void students8DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

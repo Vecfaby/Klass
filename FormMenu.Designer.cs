@@ -34,6 +34,7 @@
             this.buttonVneur = new System.Windows.Forms.Button();
             this.buttonStud = new System.Windows.Forms.Button();
             this.buttonRuk = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -47,6 +48,7 @@
             this.buttonExit.Text = "Выход";
             this.buttonExit.UseCompatibleTextRendering = true;
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonzapisi
             // 
@@ -108,11 +110,24 @@
             this.buttonRuk.UseVisualStyleBackColor = false;
             this.buttonRuk.Click += new System.EventHandler(this.buttonRuk_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(322, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(232, 40);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Главное меню";
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(840, 623);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonzapisi);
             this.Controls.Add(this.buttonZhur);
@@ -120,8 +135,9 @@
             this.Controls.Add(this.buttonStud);
             this.Controls.Add(this.buttonRuk);
             this.Name = "FormMenu";
-            this.Text = "FormMenu";
+            this.Text = "Главное меню";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -133,5 +149,6 @@
         private System.Windows.Forms.Button buttonVneur;
         private System.Windows.Forms.Button buttonStud;
         private System.Windows.Forms.Button buttonRuk;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -30,6 +30,7 @@ namespace Klass
             r5.Left = this.Left;
             r5.Top = this.Top;
             r5.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -38,6 +39,7 @@ namespace Klass
             v5.Left = this.Left;
             v5.Top = this.Top;
             v5.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +48,7 @@ namespace Klass
             h5.Left = this.Left;
             h5.Top = this.Top;
             h5.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +57,7 @@ namespace Klass
             p5.Left = this.Left;
             p5.Top = this.Top;
             p5.Show();
+            this.Hide();
         }
 
         private void buttonPoisk_Click(object sender, EventArgs e)
@@ -62,6 +66,7 @@ namespace Klass
             s5.Left = this.Left;
             s5.Top = this.Top;
             s5.Show();
+            this.Hide();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)

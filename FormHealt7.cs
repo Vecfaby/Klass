@@ -44,5 +44,10 @@ namespace Klass
             k7.Show();
             this.Hide();
         }
+
+        private void karta_health7DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

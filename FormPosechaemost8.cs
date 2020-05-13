@@ -44,5 +44,10 @@ namespace Klass
             k8.Show();
             this.Hide();
         }
+
+        private void posechaemost8DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

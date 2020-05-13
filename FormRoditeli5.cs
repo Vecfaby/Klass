@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Klass
 {
+   	        
+		
+	
     public partial class FormRoditeli5 : Form
     {
         public FormRoditeli5()
@@ -34,8 +37,17 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            roditeli5TableAdapter.Update(klassDSet);
-            MessageBox.Show("Изменения сохранены в базе данных");
+            try
+            {
+                roditeli5TableAdapter.Update(klassDSet);
+                MessageBox.Show("Изменения сохранены в базе данных");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
@@ -53,5 +65,7 @@ namespace Klass
             this.Hide();
         }
     }
+
     }
+
 

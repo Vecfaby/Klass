@@ -33,20 +33,26 @@
             this.idkartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grouphealthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diagnozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kartahealth6BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDataSet = new Klass.KlassDataSet();
+            this.kartahealth6BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDaSet = new Klass.KlassDaSet();
             this.kartahealth6BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klassDSet = new Klass.KlassDSet();
             this.buttonDellete = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.karta_health6TableAdapter = new Klass.KlassDSetTableAdapters.karta_health6TableAdapter();
-            this.klassDaSet = new Klass.KlassDaSet();
-            this.kartahealth6BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.karta_health6TableAdapter1 = new Klass.KlassDaSetTableAdapters.karta_health6TableAdapter();
+            this.karta_health6TableAdapter2 = new Klass.KlassDataSetTableAdapters.karta_health6TableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.karta_health6DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // karta_health6DataGridView
@@ -58,34 +64,55 @@
             this.idkartDataGridViewTextBoxColumn,
             this.grouphealthDataGridViewTextBoxColumn,
             this.diagnozDataGridViewTextBoxColumn});
-            this.karta_health6DataGridView.DataSource = this.kartahealth6BindingSource1;
-            this.karta_health6DataGridView.Location = new System.Drawing.Point(441, 33);
+            this.karta_health6DataGridView.DataSource = this.kartahealth6BindingSource2;
+            this.karta_health6DataGridView.Location = new System.Drawing.Point(440, 62);
             this.karta_health6DataGridView.Name = "karta_health6DataGridView";
             this.karta_health6DataGridView.RowHeadersWidth = 51;
             this.karta_health6DataGridView.RowTemplate.Height = 24;
             this.karta_health6DataGridView.Size = new System.Drawing.Size(518, 510);
             this.karta_health6DataGridView.TabIndex = 72;
+            this.karta_health6DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.karta_health6DataGridView_CellContentClick);
             // 
             // idkartDataGridViewTextBoxColumn
             // 
             this.idkartDataGridViewTextBoxColumn.DataPropertyName = "id_kart";
-            this.idkartDataGridViewTextBoxColumn.HeaderText = "id_kart";
+            this.idkartDataGridViewTextBoxColumn.HeaderText = "Код карты";
             this.idkartDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idkartDataGridViewTextBoxColumn.Name = "idkartDataGridViewTextBoxColumn";
             // 
             // grouphealthDataGridViewTextBoxColumn
             // 
             this.grouphealthDataGridViewTextBoxColumn.DataPropertyName = "group_health";
-            this.grouphealthDataGridViewTextBoxColumn.HeaderText = "group_health";
+            this.grouphealthDataGridViewTextBoxColumn.HeaderText = "Группа здоровья";
             this.grouphealthDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.grouphealthDataGridViewTextBoxColumn.Name = "grouphealthDataGridViewTextBoxColumn";
             // 
             // diagnozDataGridViewTextBoxColumn
             // 
             this.diagnozDataGridViewTextBoxColumn.DataPropertyName = "diagnoz";
-            this.diagnozDataGridViewTextBoxColumn.HeaderText = "diagnoz";
+            this.diagnozDataGridViewTextBoxColumn.HeaderText = "Диагноз";
             this.diagnozDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diagnozDataGridViewTextBoxColumn.Name = "diagnozDataGridViewTextBoxColumn";
+            // 
+            // kartahealth6BindingSource2
+            // 
+            this.kartahealth6BindingSource2.DataMember = "karta_health6";
+            this.kartahealth6BindingSource2.DataSource = this.klassDataSet;
+            // 
+            // klassDataSet
+            // 
+            this.klassDataSet.DataSetName = "KlassDataSet";
+            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kartahealth6BindingSource1
+            // 
+            this.kartahealth6BindingSource1.DataMember = "karta_health6";
+            this.kartahealth6BindingSource1.DataSource = this.klassDaSet;
+            // 
+            // klassDaSet
+            // 
+            this.klassDaSet.DataSetName = "KlassDaSet";
+            this.klassDaSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kartahealth6BindingSource
             // 
@@ -137,38 +164,48 @@
             // 
             this.karta_health6TableAdapter.ClearBeforeFill = true;
             // 
-            // klassDaSet
-            // 
-            this.klassDaSet.DataSetName = "KlassDaSet";
-            this.klassDaSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kartahealth6BindingSource1
-            // 
-            this.kartahealth6BindingSource1.DataMember = "karta_health6";
-            this.kartahealth6BindingSource1.DataSource = this.klassDaSet;
-            // 
             // karta_health6TableAdapter1
             // 
             this.karta_health6TableAdapter1.ClearBeforeFill = true;
+            // 
+            // karta_health6TableAdapter2
+            // 
+            this.karta_health6TableAdapter2.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(433, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(538, 40);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "Карта здоровья учеников 6 класса";
             // 
             // FormHealt6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.karta_health6DataGridView);
             this.Controls.Add(this.buttonDellete);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormHealt6";
-            this.Text = "FormHealt6";
+            this.Text = "Карта здоровья 6 класса";
             this.Load += new System.EventHandler(this.FormHealt6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.karta_health6DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kartahealth6BindingSource1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -181,11 +218,15 @@
         private KlassDSet klassDSet;
         private System.Windows.Forms.BindingSource kartahealth6BindingSource;
         private KlassDSetTableAdapters.karta_health6TableAdapter karta_health6TableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idkartDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn grouphealthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diagnozDataGridViewTextBoxColumn;
         private KlassDaSet klassDaSet;
         private System.Windows.Forms.BindingSource kartahealth6BindingSource1;
         private KlassDaSetTableAdapters.karta_health6TableAdapter karta_health6TableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idkartDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn grouphealthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diagnozDataGridViewTextBoxColumn;
+        private KlassDataSet klassDataSet;
+        private System.Windows.Forms.BindingSource kartahealth6BindingSource2;
+        private KlassDataSetTableAdapters.karta_health6TableAdapter karta_health6TableAdapter2;
+        private System.Windows.Forms.Label label1;
     }
 }

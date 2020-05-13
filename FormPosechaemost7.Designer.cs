@@ -33,9 +33,10 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.posechaemost7DataGridView = new System.Windows.Forms.DataGridView();
-            this.klassDSet = new Klass.KlassDSet();
             this.posechaemost7BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDSet = new Klass.KlassDSet();
             this.posechaemost7TableAdapter = new Klass.KlassDSetTableAdapters.posechaemost7TableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             this.idposDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pouvazhitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bezuvazhitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,8 +45,8 @@
             this.chet3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chet4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost7DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost7BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDellete
@@ -105,92 +106,107 @@
             this.posechaemost7DataGridView.Size = new System.Drawing.Size(639, 492);
             this.posechaemost7DataGridView.TabIndex = 65;
             // 
-            // klassDSet
-            // 
-            this.klassDSet.DataSetName = "KlassDSet";
-            this.klassDSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // posechaemost7BindingSource
             // 
             this.posechaemost7BindingSource.DataMember = "posechaemost7";
             this.posechaemost7BindingSource.DataSource = this.klassDSet;
             // 
+            // klassDSet
+            // 
+            this.klassDSet.DataSetName = "KlassDSet";
+            this.klassDSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // posechaemost7TableAdapter
             // 
             this.posechaemost7TableAdapter.ClearBeforeFill = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(428, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(521, 40);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "Посещаемость учеников 7 класса";
+            // 
             // idposDataGridViewTextBoxColumn
             // 
             this.idposDataGridViewTextBoxColumn.DataPropertyName = "id_pos";
-            this.idposDataGridViewTextBoxColumn.HeaderText = "id_pos";
+            this.idposDataGridViewTextBoxColumn.HeaderText = "Код посещаемости";
             this.idposDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idposDataGridViewTextBoxColumn.Name = "idposDataGridViewTextBoxColumn";
-            this.idposDataGridViewTextBoxColumn.Width = 79;
+            this.idposDataGridViewTextBoxColumn.Width = 149;
             // 
             // pouvazhitDataGridViewTextBoxColumn
             // 
             this.pouvazhitDataGridViewTextBoxColumn.DataPropertyName = "po_uvazhit";
-            this.pouvazhitDataGridViewTextBoxColumn.HeaderText = "po_uvazhit";
+            this.pouvazhitDataGridViewTextBoxColumn.HeaderText = "По уважительной";
             this.pouvazhitDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.pouvazhitDataGridViewTextBoxColumn.Name = "pouvazhitDataGridViewTextBoxColumn";
-            this.pouvazhitDataGridViewTextBoxColumn.Width = 106;
+            this.pouvazhitDataGridViewTextBoxColumn.Width = 139;
             // 
             // bezuvazhitDataGridViewTextBoxColumn
             // 
             this.bezuvazhitDataGridViewTextBoxColumn.DataPropertyName = "bez_uvazhit";
-            this.bezuvazhitDataGridViewTextBoxColumn.HeaderText = "bez_uvazhit";
+            this.bezuvazhitDataGridViewTextBoxColumn.HeaderText = "Без уважительной";
             this.bezuvazhitDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bezuvazhitDataGridViewTextBoxColumn.Name = "bezuvazhitDataGridViewTextBoxColumn";
-            this.bezuvazhitDataGridViewTextBoxColumn.Width = 113;
+            this.bezuvazhitDataGridViewTextBoxColumn.Width = 145;
             // 
             // chet1DataGridViewTextBoxColumn
             // 
             this.chet1DataGridViewTextBoxColumn.DataPropertyName = "chet1";
-            this.chet1DataGridViewTextBoxColumn.HeaderText = "chet1";
+            this.chet1DataGridViewTextBoxColumn.HeaderText = "I четверть";
             this.chet1DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.chet1DataGridViewTextBoxColumn.Name = "chet1DataGridViewTextBoxColumn";
-            this.chet1DataGridViewTextBoxColumn.Width = 72;
+            this.chet1DataGridViewTextBoxColumn.Width = 104;
             // 
             // chet2DataGridViewTextBoxColumn
             // 
             this.chet2DataGridViewTextBoxColumn.DataPropertyName = "chet2";
-            this.chet2DataGridViewTextBoxColumn.HeaderText = "chet2";
+            this.chet2DataGridViewTextBoxColumn.HeaderText = "II четверть";
             this.chet2DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.chet2DataGridViewTextBoxColumn.Name = "chet2DataGridViewTextBoxColumn";
-            this.chet2DataGridViewTextBoxColumn.Width = 72;
+            this.chet2DataGridViewTextBoxColumn.Width = 99;
             // 
             // chet3DataGridViewTextBoxColumn
             // 
             this.chet3DataGridViewTextBoxColumn.DataPropertyName = "chet3";
-            this.chet3DataGridViewTextBoxColumn.HeaderText = "chet3";
+            this.chet3DataGridViewTextBoxColumn.HeaderText = "III четверть";
             this.chet3DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.chet3DataGridViewTextBoxColumn.Name = "chet3DataGridViewTextBoxColumn";
-            this.chet3DataGridViewTextBoxColumn.Width = 72;
+            this.chet3DataGridViewTextBoxColumn.Width = 101;
             // 
             // chet4DataGridViewTextBoxColumn
             // 
             this.chet4DataGridViewTextBoxColumn.DataPropertyName = "chet4";
-            this.chet4DataGridViewTextBoxColumn.HeaderText = "chet4";
+            this.chet4DataGridViewTextBoxColumn.HeaderText = "IV четверть";
             this.chet4DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.chet4DataGridViewTextBoxColumn.Name = "chet4DataGridViewTextBoxColumn";
-            this.chet4DataGridViewTextBoxColumn.Width = 72;
+            this.chet4DataGridViewTextBoxColumn.Width = 104;
             // 
             // FormPosechaemost7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonDellete);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.posechaemost7DataGridView);
             this.Name = "FormPosechaemost7";
-            this.Text = "FormPosechaemost7";
+            this.Text = "Посещаемость 7 класса";
             this.Load += new System.EventHandler(this.FormPosechaemost7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost7DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posechaemost7BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -203,6 +219,7 @@
         private KlassDSet klassDSet;
         private System.Windows.Forms.BindingSource posechaemost7BindingSource;
         private KlassDSetTableAdapters.posechaemost7TableAdapter posechaemost7TableAdapter;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idposDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvazhitDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bezuvazhitDataGridViewTextBoxColumn;

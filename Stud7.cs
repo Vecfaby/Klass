@@ -19,6 +19,8 @@ namespace Klass
 
         private void Stud7_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students7". При необходимости она может быть перемещена или удалена.
+            this.students7TableAdapter1.Fill(this.klassDataSet.students7);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students7". При необходимости она может быть перемещена или удалена.
             this.students7TableAdapter.Fill(this.klassDSet.students7);
 
@@ -30,6 +32,7 @@ namespace Klass
             r7.Left = this.Left;
             r7.Top = this.Top;
             r7.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -38,6 +41,7 @@ namespace Klass
             v7.Left = this.Left;
             v7.Top = this.Top;
             v7.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +50,7 @@ namespace Klass
             h7.Left = this.Left;
             h7.Top = this.Top;
             h7.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +59,7 @@ namespace Klass
             p7.Left = this.Left;
             p7.Top = this.Top;
             p7.Show();
+            this.Hide();
         }
 
         private void buttonPoisk_Click(object sender, EventArgs e)
@@ -62,6 +68,7 @@ namespace Klass
             s7.Left = this.Left;
             s7.Top = this.Top;
             s7.Show();
+            this.Hide();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)

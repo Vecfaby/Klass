@@ -40,6 +40,7 @@
             this.usersTableAdapter1 = new Klass.KlassDaSetTableAdapters.UsersTableAdapter();
             this.tableAdapterManager = new Klass.KlassDaSetTableAdapters.TableAdapterManager();
             this.usersDataGridView = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -162,17 +163,28 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.usersDataGridView.DataSource = this.usersBindingSource1;
-            this.usersDataGridView.Location = new System.Drawing.Point(150, 33);
+            this.usersDataGridView.Location = new System.Drawing.Point(137, 64);
             this.usersDataGridView.Name = "usersDataGridView";
             this.usersDataGridView.RowHeadersWidth = 51;
             this.usersDataGridView.RowTemplate.Height = 24;
-            this.usersDataGridView.Size = new System.Drawing.Size(545, 420);
+            this.usersDataGridView.Size = new System.Drawing.Size(555, 420);
             this.usersDataGridView.TabIndex = 70;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(285, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(259, 40);
+            this.label2.TabIndex = 79;
+            this.label2.Text = "Учетные записи";
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id_user";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_user";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код пользователя";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -181,7 +193,7 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Login";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Login";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Логин";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
@@ -189,7 +201,7 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Password";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Password";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Пароль";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 125;
@@ -197,7 +209,7 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Role";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Role";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Роль/Должность";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
@@ -206,13 +218,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(819, 647);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.usersDataGridView);
             this.Controls.Add(this.buttonDellete);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
             this.Name = "Formzapisi";
-            this.Text = "Formzapisi";
+            this.Text = "Учетные записи";
             this.Load += new System.EventHandler(this.Formzapisi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
@@ -220,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -235,6 +250,7 @@
         private KlassDaSetTableAdapters.UsersTableAdapter usersTableAdapter1;
         private KlassDaSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView usersDataGridView;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

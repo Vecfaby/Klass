@@ -44,5 +44,10 @@ namespace Klass
             k5.Show();
             this.Hide();
         }
+
+        private void posechaemost5DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
