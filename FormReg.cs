@@ -57,6 +57,11 @@ namespace Klass
             a.Show();
             this.Hide();
         }
+
+        private void roleTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

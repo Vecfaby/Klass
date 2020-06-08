@@ -92,9 +92,9 @@ namespace Klass {
         
         private global::System.Data.DataRelation relationFK_students5_posechaemost5;
         
-        private global::System.Data.DataRelation relationFK_students5_roditeli5;
-        
         private global::System.Data.DataRelation relationFK_students5_vedomost5;
+        
+        private global::System.Data.DataRelation relationFK_students5_roditeli5;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -948,8 +948,8 @@ namespace Klass {
             }
             this.relationFK_students5_karta_health5 = this.Relations["FK_students5_karta_health5"];
             this.relationFK_students5_posechaemost5 = this.Relations["FK_students5_posechaemost5"];
-            this.relationFK_students5_roditeli5 = this.Relations["FK_students5_roditeli5"];
             this.relationFK_students5_vedomost5 = this.Relations["FK_students5_vedomost5"];
+            this.relationFK_students5_roditeli5 = this.Relations["FK_students5_roditeli5"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1032,14 +1032,14 @@ namespace Klass {
                         this.tableposechaemost5.id_posColumn}, new global::System.Data.DataColumn[] {
                         this.tablestudents5.id_posColumn}, false);
             this.Relations.Add(this.relationFK_students5_posechaemost5);
-            this.relationFK_students5_roditeli5 = new global::System.Data.DataRelation("FK_students5_roditeli5", new global::System.Data.DataColumn[] {
-                        this.tableroditeli5.id_rodColumn}, new global::System.Data.DataColumn[] {
-                        this.tablestudents5.id_rodColumn}, false);
-            this.Relations.Add(this.relationFK_students5_roditeli5);
             this.relationFK_students5_vedomost5 = new global::System.Data.DataRelation("FK_students5_vedomost5", new global::System.Data.DataColumn[] {
                         this.tablevedomost5.id_vedColumn}, new global::System.Data.DataColumn[] {
                         this.tablestudents5.id_vedColumn}, false);
             this.Relations.Add(this.relationFK_students5_vedomost5);
+            this.relationFK_students5_roditeli5 = new global::System.Data.DataRelation("FK_students5_roditeli5", new global::System.Data.DataColumn[] {
+                        this.tableroditeli5.id_rodColumn}, new global::System.Data.DataColumn[] {
+                        this.tablestudents5.id_rodColumn}, false);
+            this.Relations.Add(this.relationFK_students5_roditeli5);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8431,13 +8431,6 @@ namespace Klass {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public students6Row FindByid_student(int id_student) {
-                return ((students6Row)(this.Rows.Find(new object[] {
-                            id_student})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 students6DataTable cln = ((students6DataTable)(base.Clone()));
                 cln.InitVars();
@@ -8507,7 +8500,9 @@ namespace Klass {
                 this.columnid_ved = new global::System.Data.DataColumn("id_ved", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_ved);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnid_student}, true));
+                                this.columnid_student}, false));
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint2", new global::System.Data.DataColumn[] {
+                                this.columnid_kart}, false));
                 this.columnid_student.AllowDBNull = false;
                 this.columnid_student.Unique = true;
                 this.columnname_student.MaxLength = 50;
@@ -8516,6 +8511,7 @@ namespace Klass {
                 this.columnphone_number.MaxLength = 50;
                 this.columnname_parent.MaxLength = 50;
                 this.columnposition.MaxLength = 50;
+                this.columnid_kart.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16491,23 +16487,23 @@ namespace Klass {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public roditeli5Row roditeli5Row {
-                get {
-                    return ((roditeli5Row)(this.GetParentRow(this.Table.ParentRelations["FK_students5_roditeli5"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_students5_roditeli5"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public vedomost5Row vedomost5Row {
                 get {
                     return ((vedomost5Row)(this.GetParentRow(this.Table.ParentRelations["FK_students5_vedomost5"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_students5_vedomost5"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public roditeli5Row roditeli5Row {
+                get {
+                    return ((roditeli5Row)(this.GetParentRow(this.Table.ParentRelations["FK_students5_roditeli5"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_students5_roditeli5"]);
                 }
             }
             
@@ -31998,45 +31994,6 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    global::System.Nullable<int> id_school, 
-                    global::System.Nullable<int> id_klass, 
-                    string name_student, 
-                    global::System.Nullable<global::System.DateTime> birthday, 
-                    string adres, 
-                    string pol, 
-                    string phone_number, 
-                    string name_parent, 
-                    global::System.Nullable<long> pas_serial, 
-                    global::System.Nullable<long> pas_number, 
-                    string position, 
-                    global::System.Nullable<int> id_rod, 
-                    global::System.Nullable<int> id_kart, 
-                    global::System.Nullable<int> id_pos, 
-                    global::System.Nullable<int> id_ved, 
-                    int Original_id_student, 
-                    global::System.Nullable<int> Original_id_school, 
-                    global::System.Nullable<int> Original_id_klass, 
-                    string Original_name_student, 
-                    global::System.Nullable<global::System.DateTime> Original_birthday, 
-                    string Original_adres, 
-                    string Original_pol, 
-                    string Original_phone_number, 
-                    string Original_name_parent, 
-                    global::System.Nullable<long> Original_pas_serial, 
-                    global::System.Nullable<long> Original_pas_number, 
-                    string Original_position, 
-                    global::System.Nullable<int> Original_id_rod, 
-                    global::System.Nullable<int> Original_id_kart, 
-                    global::System.Nullable<int> Original_id_pos, 
-                    global::System.Nullable<int> Original_id_ved) {
-            return this.Update(Original_id_student, id_school, id_klass, name_student, birthday, adres, pol, phone_number, name_parent, pas_serial, pas_number, position, id_rod, id_kart, id_pos, id_ved, Original_id_student, Original_id_school, Original_id_klass, Original_name_student, Original_birthday, Original_adres, Original_pol, Original_phone_number, Original_name_parent, Original_pas_serial, Original_pas_number, Original_position, Original_id_rod, Original_id_kart, Original_id_pos, Original_id_ved);
         }
     }
     

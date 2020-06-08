@@ -53,6 +53,12 @@
     <Compile Include="FormAuto.Designer.cs">
       <DependentUpon>FormAuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutor.Designer.cs">
+      <DependentUpon>FormAutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHealt5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,15 +263,25 @@
     <Compile Include="FormZhurnal.Designer.cs">
       <DependentUpon>FormZhurnal.cs</DependentUpon>
     </Compile>
+    <Compile Include="InDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="KlassDaSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KlassDaSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="KlassDataSet.Designer.cs">
+    <Compile Include="KlassDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>KlassDataSet.xsd</DependentUpon>
+      <DependentUpon>KlassDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KlassDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KlassDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="KlassDatSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -279,6 +295,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Stud5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +332,9 @@
     </Compile>
     <EmbeddedResource Include="FormAuto.resx">
       <DependentUpon>FormAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAutor.resx">
+      <DependentUpon>FormAutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHealt5.resx">
       <DependentUpon>FormHealt5.cs</DependentUpon>
@@ -438,6 +462,17 @@
     <EmbeddedResource Include="Stud9.resx">
       <DependentUpon>Stud9.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="InDataSet.xsc">
+      <DependentUpon>InDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InDataSet.xss">
+      <DependentUpon>InDataSet.xsd</DependentUpon>
+    </None>
     <None Include="KlassDaSet.xsc">
       <DependentUpon>KlassDaSet.xsd</DependentUpon>
     </None>
@@ -454,11 +489,32 @@
     </None>
     <None Include="KlassDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KlassDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="KlassDataSet.xss">
       <DependentUpon>KlassDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDataSet1.xsc">
+      <DependentUpon>KlassDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KlassDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KlassDataSet1.xss">
+      <DependentUpon>KlassDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDataSet2.xsc">
+      <DependentUpon>KlassDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KlassDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KlassDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KlassDataSet2.xss">
+      <DependentUpon>KlassDataSet2.xsd</DependentUpon>
     </None>
     <None Include="KlassDatSet.xsc">
       <DependentUpon>KlassDatSet.xsd</DependentUpon>
@@ -491,6 +547,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RegDataSet.xsc">
+      <DependentUpon>RegDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RegDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegDataSet.xss">
+      <DependentUpon>RegDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -35,7 +35,6 @@
             this.tableAdapterManager = new Klass.KlassDatSetTableAdapters.TableAdapterManager();
             this.karta_health5TableAdapter = new Klass.KlassDatSetTableAdapters.karta_health5TableAdapter();
             this.karta_health5BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonReg = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonEnter = new System.Windows.Forms.Button();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -45,6 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.buttonReg = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.klassDatSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.karta_health5BindingSource)).BeginInit();
@@ -109,18 +110,6 @@
             // 
             this.karta_health5BindingSource.DataMember = "karta_health5";
             this.karta_health5BindingSource.DataSource = this.klassDatSet;
-            // 
-            // buttonReg
-            // 
-            this.buttonReg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonReg.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonReg.Location = new System.Drawing.Point(492, 356);
-            this.buttonReg.Name = "buttonReg";
-            this.buttonReg.Size = new System.Drawing.Size(187, 58);
-            this.buttonReg.TabIndex = 26;
-            this.buttonReg.Text = "Регистрация";
-            this.buttonReg.UseVisualStyleBackColor = false;
-            this.buttonReg.Click += new System.EventHandler(this.buttonReg_Click);
             // 
             // buttonExit
             // 
@@ -200,7 +189,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(197, 63);
+            this.label1.Location = new System.Drawing.Point(184, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(604, 80);
             this.label1.TabIndex = 18;
@@ -210,12 +199,37 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.NavajoWhite;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Location = new System.Drawing.Point(132, 135);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(700, 40);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Для входа в систему введите логин и пароль";
+            // 
+            // buttonReg
+            // 
+            this.buttonReg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonReg.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonReg.Location = new System.Drawing.Point(492, 356);
+            this.buttonReg.Name = "buttonReg";
+            this.buttonReg.Size = new System.Drawing.Size(187, 58);
+            this.buttonReg.TabIndex = 26;
+            this.buttonReg.Text = "Регистрация";
+            this.buttonReg.UseVisualStyleBackColor = false;
+            this.buttonReg.Click += new System.EventHandler(this.buttonReg_Click);
+            // 
             // FormAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(952, 530);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonReg);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonEnter);
@@ -244,7 +258,6 @@
         private KlassDatSetTableAdapters.TableAdapterManager tableAdapterManager;
         private KlassDatSetTableAdapters.karta_health5TableAdapter karta_health5TableAdapter;
         private System.Windows.Forms.BindingSource karta_health5BindingSource;
-        private System.Windows.Forms.Button buttonReg;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonEnter;
         private System.Windows.Forms.TextBox textBoxPassword;
@@ -254,6 +267,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonReg;
     }
 }
 

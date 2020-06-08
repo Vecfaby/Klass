@@ -19,6 +19,8 @@ namespace Klass
 
         private void FormPosechaemost5_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students5". При необходимости она может быть перемещена или удалена.
+            this.students5TableAdapter.Fill(this.klassDSet.students5);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.posechaemost5". При необходимости она может быть перемещена или удалена.
             this.posechaemost5TableAdapter.Fill(this.klassDSet.posechaemost5);
 
@@ -26,8 +28,16 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
+            try { 
             posechaemost5TableAdapter.Update(klassDSet);
             MessageBox.Show("Изменения сохранены в базе данных");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)

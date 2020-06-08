@@ -41,18 +41,13 @@
             this.klass_rukTableAdapter = new Klass.KlassDatSetTableAdapters.Klass_rukTableAdapter();
             this.tableAdapterManager = new Klass.KlassDatSetTableAdapters.TableAdapterManager();
             this.klass_rukBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.klass_rukBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.id_klassTextBox = new System.Windows.Forms.TextBox();
             this.name_rukTextBox = new System.Windows.Forms.TextBox();
             this.phoneTextBox = new System.Windows.Forms.TextBox();
@@ -188,43 +183,31 @@
             // 
             // klass_rukBindingNavigator
             // 
-            this.klass_rukBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.klass_rukBindingNavigator.AddNewItem = null;
             this.klass_rukBindingNavigator.BindingSource = this.klass_rukBindingSource;
             this.klass_rukBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.klass_rukBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.klass_rukBindingNavigator.DeleteItem = null;
+            this.klass_rukBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
             this.klass_rukBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.klass_rukBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
             this.bindingNavigatorPositionItem,
             this.bindingNavigatorCountItem,
             this.bindingNavigatorSeparator1,
             this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.klass_rukBindingNavigatorSaveItem});
+            this.bindingNavigatorSeparator2});
             this.klass_rukBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.klass_rukBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.klass_rukBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.klass_rukBindingNavigator.MoveFirstItem = null;
+            this.klass_rukBindingNavigator.MoveLastItem = null;
             this.klass_rukBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.klass_rukBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.klass_rukBindingNavigator.Name = "klass_rukBindingNavigator";
             this.klass_rukBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.klass_rukBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.klass_rukBindingNavigator.Size = new System.Drawing.Size(196, 27);
             this.klass_rukBindingNavigator.TabIndex = 0;
             this.klass_rukBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            this.klass_rukBindingNavigator.RefreshItems += new System.EventHandler(this.klass_rukBindingNavigator_RefreshItems);
             // 
             // bindingNavigatorCountItem
             // 
@@ -232,24 +215,6 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
             // 
@@ -289,28 +254,10 @@
             this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // klass_rukBindingNavigatorSaveItem
-            // 
-            this.klass_rukBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.klass_rukBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("klass_rukBindingNavigatorSaveItem.Image")));
-            this.klass_rukBindingNavigatorSaveItem.Name = "klass_rukBindingNavigatorSaveItem";
-            this.klass_rukBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.klass_rukBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.klass_rukBindingNavigatorSaveItem.Click += new System.EventHandler(this.klass_rukBindingNavigatorSaveItem_Click);
             // 
             // id_klassTextBox
             // 
@@ -318,7 +265,7 @@
             this.id_klassTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.id_klassTextBox.Location = new System.Drawing.Point(476, 100);
             this.id_klassTextBox.Name = "id_klassTextBox";
-            this.id_klassTextBox.Size = new System.Drawing.Size(225, 32);
+            this.id_klassTextBox.Size = new System.Drawing.Size(425, 32);
             this.id_klassTextBox.TabIndex = 2;
             // 
             // name_rukTextBox
@@ -327,7 +274,7 @@
             this.name_rukTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.name_rukTextBox.Location = new System.Drawing.Point(476, 138);
             this.name_rukTextBox.Name = "name_rukTextBox";
-            this.name_rukTextBox.Size = new System.Drawing.Size(225, 32);
+            this.name_rukTextBox.Size = new System.Drawing.Size(425, 32);
             this.name_rukTextBox.TabIndex = 4;
             // 
             // phoneTextBox
@@ -336,7 +283,7 @@
             this.phoneTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.phoneTextBox.Location = new System.Drawing.Point(476, 176);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(225, 32);
+            this.phoneTextBox.Size = new System.Drawing.Size(425, 32);
             this.phoneTextBox.TabIndex = 6;
             // 
             // adresTextBox
@@ -345,7 +292,7 @@
             this.adresTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.adresTextBox.Location = new System.Drawing.Point(476, 214);
             this.adresTextBox.Name = "adresTextBox";
-            this.adresTextBox.Size = new System.Drawing.Size(225, 32);
+            this.adresTextBox.Size = new System.Drawing.Size(425, 32);
             this.adresTextBox.TabIndex = 8;
             // 
             // id_shcoolTextBox
@@ -354,7 +301,7 @@
             this.id_shcoolTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.id_shcoolTextBox.Location = new System.Drawing.Point(476, 252);
             this.id_shcoolTextBox.Name = "id_shcoolTextBox";
-            this.id_shcoolTextBox.Size = new System.Drawing.Size(225, 32);
+            this.id_shcoolTextBox.Size = new System.Drawing.Size(425, 32);
             this.id_shcoolTextBox.TabIndex = 10;
             // 
             // name_shcoolTextBox
@@ -363,14 +310,14 @@
             this.name_shcoolTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.name_shcoolTextBox.Location = new System.Drawing.Point(476, 290);
             this.name_shcoolTextBox.Name = "name_shcoolTextBox";
-            this.name_shcoolTextBox.Size = new System.Drawing.Size(225, 32);
+            this.name_shcoolTextBox.Size = new System.Drawing.Size(425, 32);
             this.name_shcoolTextBox.TabIndex = 12;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(141, 332);
+            this.button2.Location = new System.Drawing.Point(627, 339);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 58);
             this.button2.TabIndex = 44;
@@ -382,7 +329,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(391, 332);
+            this.button1.Location = new System.Drawing.Point(359, 339);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 58);
             this.button1.TabIndex = 45;
@@ -395,7 +342,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(187, 43);
+            this.label1.Location = new System.Drawing.Point(295, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(380, 40);
             this.label1.TabIndex = 66;
@@ -406,7 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(925, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -443,18 +390,13 @@
         private KlassDatSetTableAdapters.Klass_rukTableAdapter klass_rukTableAdapter;
         private KlassDatSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator klass_rukBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton klass_rukBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox id_klassTextBox;
         private System.Windows.Forms.TextBox name_rukTextBox;
         private System.Windows.Forms.TextBox phoneTextBox;

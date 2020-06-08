@@ -27,6 +27,7 @@ namespace Klass
 
         private void FormZhurnal_Load(object sender, EventArgs e)
         {
+            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.zhurnal_TB". При необходимости она может быть перемещена или удалена.
             this.zhurnal_TBTableAdapter2.Fill(this.klassDataSet.zhurnal_TB);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.zhurnal_TB". При необходимости она может быть перемещена или удалена.

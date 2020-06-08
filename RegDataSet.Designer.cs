@@ -20,9 +20,9 @@ namespace Klass {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("KlassDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("RegDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class KlassDataSet : global::System.Data.DataSet {
+    public partial class RegDataSet : global::System.Data.DataSet {
         
         private instruktionDataTable tableinstruktion;
         
@@ -124,7 +124,7 @@ namespace Klass {
         
         private global::System.Data.DataRelation relationFK_students9_posechaemost9;
         
-        private global::System.Data.DataRelation relationFK_students9_roditeli9;
+        private global::System.Data.DataRelation relationFK_students9_roditeli91;
         
         private global::System.Data.DataRelation relationFK_students9_vedomost9;
         
@@ -134,7 +134,7 @@ namespace Klass {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public KlassDataSet() {
+        public RegDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -145,7 +145,7 @@ namespace Klass {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected KlassDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected RegDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -634,7 +634,7 @@ namespace Klass {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            KlassDataSet cln = ((KlassDataSet)(base.Clone()));
+            RegDataSet cln = ((RegDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -998,7 +998,7 @@ namespace Klass {
             this.relationFK_students8_vedomost8 = this.Relations["FK_students8_vedomost8"];
             this.relationFK_students9_karta_health9 = this.Relations["FK_students9_karta_health9"];
             this.relationFK_students9_posechaemost9 = this.Relations["FK_students9_posechaemost9"];
-            this.relationFK_students9_roditeli9 = this.Relations["FK_students9_roditeli9"];
+            this.relationFK_students9_roditeli91 = this.Relations["FK_students9_roditeli91"];
             this.relationFK_students9_vedomost9 = this.Relations["FK_students9_vedomost9"];
             this.relationFK_zhurnal_TB_instruktion = this.Relations["FK_zhurnal_TB_instruktion"];
         }
@@ -1006,9 +1006,9 @@ namespace Klass {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "KlassDataSet";
+            this.DataSetName = "RegDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/KlassDataSet.xsd";
+            this.Namespace = "http://tempuri.org/RegDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableinstruktion = new instruktionDataTable();
@@ -1147,10 +1147,10 @@ namespace Klass {
                         this.tableposechaemost9.id_posColumn}, new global::System.Data.DataColumn[] {
                         this.tablestudents9.id_posColumn}, false);
             this.Relations.Add(this.relationFK_students9_posechaemost9);
-            this.relationFK_students9_roditeli9 = new global::System.Data.DataRelation("FK_students9_roditeli9", new global::System.Data.DataColumn[] {
+            this.relationFK_students9_roditeli91 = new global::System.Data.DataRelation("FK_students9_roditeli91", new global::System.Data.DataColumn[] {
                         this.tableroditeli9.id_rodColumn}, new global::System.Data.DataColumn[] {
                         this.tablestudents9.id_rodColumn}, false);
-            this.Relations.Add(this.relationFK_students9_roditeli9);
+            this.Relations.Add(this.relationFK_students9_roditeli91);
             this.relationFK_students9_vedomost9 = new global::System.Data.DataRelation("FK_students9_vedomost9", new global::System.Data.DataColumn[] {
                         this.tablevedomost9.id_vedColumn}, new global::System.Data.DataColumn[] {
                         this.tablestudents9.id_vedColumn}, false);
@@ -1364,7 +1364,7 @@ namespace Klass {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            KlassDataSet ds = new KlassDataSet();
+            RegDataSet ds = new RegDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -1732,7 +1732,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2020,7 +2020,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2308,7 +2308,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2596,7 +2596,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2884,7 +2884,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3172,7 +3172,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3504,7 +3504,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3852,7 +3852,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4200,7 +4200,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4548,7 +4548,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4896,7 +4896,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5244,7 +5244,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5637,7 +5637,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6030,7 +6030,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6423,7 +6423,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6816,7 +6816,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7209,7 +7209,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7457,7 +7457,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7720,7 +7720,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8222,7 +8222,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8724,7 +8724,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9226,7 +9226,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9728,7 +9728,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10037,7 +10037,7 @@ namespace Klass {
                         long pas_serial, 
                         long pas_number, 
                         string position, 
-                        roditeli9Row parentroditeli9RowByFK_students9_roditeli9, 
+                        roditeli9Row parentroditeli9RowByFK_students9_roditeli91, 
                         karta_health9Row parentkarta_health9RowByFK_students9_karta_health9, 
                         posechaemost9Row parentposechaemost9RowByFK_students9_posechaemost9, 
                         vedomost9Row parentvedomost9RowByFK_students9_vedomost9) {
@@ -10059,8 +10059,8 @@ namespace Klass {
                         null,
                         null,
                         null};
-                if ((parentroditeli9RowByFK_students9_roditeli9 != null)) {
-                    columnValuesArray[12] = parentroditeli9RowByFK_students9_roditeli9[0];
+                if ((parentroditeli9RowByFK_students9_roditeli91 != null)) {
+                    columnValuesArray[12] = parentroditeli9RowByFK_students9_roditeli91[0];
                 }
                 if ((parentkarta_health9RowByFK_students9_karta_health9 != null)) {
                     columnValuesArray[13] = parentkarta_health9RowByFK_students9_karta_health9[0];
@@ -10230,7 +10230,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10304,6 +10304,12 @@ namespace Klass {
             
             private global::System.Data.DataColumn columnRole;
             
+            private global::System.Data.DataColumn columnName;
+            
+            private global::System.Data.DataColumn columnSurname;
+            
+            private global::System.Data.DataColumn columnOtch;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public UsersDataTable() {
@@ -10371,6 +10377,30 @@ namespace Klass {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NameColumn {
+                get {
+                    return this.columnName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SurnameColumn {
+                get {
+                    return this.columnSurname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn OtchColumn {
+                get {
+                    return this.columnOtch;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -10406,13 +10436,16 @@ namespace Klass {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public UsersRow AddUsersRow(string Login, string Password, string Role) {
+            public UsersRow AddUsersRow(string Login, string Password, string Role, byte[] Name, string Surname, string Otch) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Login,
                         Password,
-                        Role};
+                        Role,
+                        Name,
+                        Surname,
+                        Otch};
                 rowUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUsersRow);
                 return rowUsersRow;
@@ -10446,6 +10479,9 @@ namespace Klass {
                 this.columnLogin = base.Columns["Login"];
                 this.columnPassword = base.Columns["Password"];
                 this.columnRole = base.Columns["Role"];
+                this.columnName = base.Columns["Name"];
+                this.columnSurname = base.Columns["Surname"];
+                this.columnOtch = base.Columns["Otch"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10459,6 +10495,12 @@ namespace Klass {
                 base.Columns.Add(this.columnPassword);
                 this.columnRole = new global::System.Data.DataColumn("Role", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRole);
+                this.columnName = new global::System.Data.DataColumn("Name", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnName);
+                this.columnSurname = new global::System.Data.DataColumn("Surname", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSurname);
+                this.columnOtch = new global::System.Data.DataColumn("Otch", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOtch);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_user}, true));
                 this.columnid_user.AutoIncrement = true;
@@ -10471,6 +10513,8 @@ namespace Klass {
                 this.columnLogin.MaxLength = 50;
                 this.columnPassword.MaxLength = 50;
                 this.columnRole.MaxLength = 50;
+                this.columnSurname.MaxLength = 10;
+                this.columnOtch.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10538,7 +10582,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10961,7 +11005,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11384,7 +11428,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11807,7 +11851,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12230,7 +12274,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12653,7 +12697,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12926,7 +12970,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13234,7 +13278,7 @@ namespace Klass {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                KlassDataSet ds = new KlassDataSet();
+                RegDataSet ds = new RegDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16478,11 +16522,11 @@ namespace Klass {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public students9Row[] Getstudents9Rows() {
-                if ((this.Table.ChildRelations["FK_students9_roditeli9"] == null)) {
+                if ((this.Table.ChildRelations["FK_students9_roditeli91"] == null)) {
                     return new students9Row[0];
                 }
                 else {
-                    return ((students9Row[])(base.GetChildRows(this.Table.ChildRelations["FK_students9_roditeli9"])));
+                    return ((students9Row[])(base.GetChildRows(this.Table.ChildRelations["FK_students9_roditeli91"])));
                 }
             }
         }
@@ -18835,10 +18879,10 @@ namespace Klass {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public roditeli9Row roditeli9Row {
                 get {
-                    return ((roditeli9Row)(this.GetParentRow(this.Table.ParentRelations["FK_students9_roditeli9"])));
+                    return ((roditeli9Row)(this.GetParentRow(this.Table.ParentRelations["FK_students9_roditeli91"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_students9_roditeli9"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_students9_roditeli91"]);
                 }
             }
             
@@ -19104,6 +19148,54 @@ namespace Klass {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public byte[] Name {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableUsers.NameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Name\' в таблице \'Users\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUsers.NameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Surname {
+                get {
+                    try {
+                        return ((string)(this[this.tableUsers.SurnameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Surname\' в таблице \'Users\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUsers.SurnameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Otch {
+                get {
+                    try {
+                        return ((string)(this[this.tableUsers.OtchColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Otch\' в таблице \'Users\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUsers.OtchColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPasswordNull() {
                 return this.IsNull(this.tableUsers.PasswordColumn);
             }
@@ -19124,6 +19216,42 @@ namespace Klass {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetRoleNull() {
                 this[this.tableUsers.RoleColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNameNull() {
+                return this.IsNull(this.tableUsers.NameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNameNull() {
+                this[this.tableUsers.NameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSurnameNull() {
+                return this.IsNull(this.tableUsers.SurnameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSurnameNull() {
+                this[this.tableUsers.SurnameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsOtchNull() {
+                return this.IsNull(this.tableUsers.OtchColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetOtchNull() {
+                this[this.tableUsers.OtchColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -22100,7 +22228,7 @@ namespace Klass {
         }
     }
 }
-namespace Klass.KlassDataSetTableAdapters {
+namespace Klass.RegDataSetTableAdapters {
     
     
     /// <summary>
@@ -22282,7 +22410,7 @@ SELECT id_instruk, number_instruk, name_instruk FROM instruktion WHERE (id_instr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.instruktionDataTable dataTable) {
+        public virtual int Fill(RegDataSet.instruktionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -22295,9 +22423,9 @@ SELECT id_instruk, number_instruk, name_instruk FROM instruktion WHERE (id_instr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.instruktionDataTable GetData() {
+        public virtual RegDataSet.instruktionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.instruktionDataTable dataTable = new KlassDataSet.instruktionDataTable();
+            RegDataSet.instruktionDataTable dataTable = new RegDataSet.instruktionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -22305,14 +22433,14 @@ SELECT id_instruk, number_instruk, name_instruk FROM instruktion WHERE (id_instr
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.instruktionDataTable dataTable) {
+        public virtual int Update(RegDataSet.instruktionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "instruktion");
         }
         
@@ -22642,7 +22770,7 @@ SELECT id_kart, group_health, diagnoz FROM karta_health5 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.karta_health5DataTable dataTable) {
+        public virtual int Fill(RegDataSet.karta_health5DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -22655,9 +22783,9 @@ SELECT id_kart, group_health, diagnoz FROM karta_health5 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.karta_health5DataTable GetData() {
+        public virtual RegDataSet.karta_health5DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.karta_health5DataTable dataTable = new KlassDataSet.karta_health5DataTable();
+            RegDataSet.karta_health5DataTable dataTable = new RegDataSet.karta_health5DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -22665,14 +22793,14 @@ SELECT id_kart, group_health, diagnoz FROM karta_health5 WHERE (id_kart = @id_ka
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.karta_health5DataTable dataTable) {
+        public virtual int Update(RegDataSet.karta_health5DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "karta_health5");
         }
         
@@ -23002,7 +23130,7 @@ SELECT id_kart, group_health, diagnoz FROM karta_health6 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.karta_health6DataTable dataTable) {
+        public virtual int Fill(RegDataSet.karta_health6DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -23015,9 +23143,9 @@ SELECT id_kart, group_health, diagnoz FROM karta_health6 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.karta_health6DataTable GetData() {
+        public virtual RegDataSet.karta_health6DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.karta_health6DataTable dataTable = new KlassDataSet.karta_health6DataTable();
+            RegDataSet.karta_health6DataTable dataTable = new RegDataSet.karta_health6DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -23025,14 +23153,14 @@ SELECT id_kart, group_health, diagnoz FROM karta_health6 WHERE (id_kart = @id_ka
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.karta_health6DataTable dataTable) {
+        public virtual int Update(RegDataSet.karta_health6DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "karta_health6");
         }
         
@@ -23362,7 +23490,7 @@ SELECT id_kart, group_health, diagnoz FROM karta_health7 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.karta_health7DataTable dataTable) {
+        public virtual int Fill(RegDataSet.karta_health7DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -23375,9 +23503,9 @@ SELECT id_kart, group_health, diagnoz FROM karta_health7 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.karta_health7DataTable GetData() {
+        public virtual RegDataSet.karta_health7DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.karta_health7DataTable dataTable = new KlassDataSet.karta_health7DataTable();
+            RegDataSet.karta_health7DataTable dataTable = new RegDataSet.karta_health7DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -23385,14 +23513,14 @@ SELECT id_kart, group_health, diagnoz FROM karta_health7 WHERE (id_kart = @id_ka
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.karta_health7DataTable dataTable) {
+        public virtual int Update(RegDataSet.karta_health7DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "karta_health7");
         }
         
@@ -23722,7 +23850,7 @@ SELECT id_kart, group_health, diagnoz FROM karta_health8 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.karta_health8DataTable dataTable) {
+        public virtual int Fill(RegDataSet.karta_health8DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -23735,9 +23863,9 @@ SELECT id_kart, group_health, diagnoz FROM karta_health8 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.karta_health8DataTable GetData() {
+        public virtual RegDataSet.karta_health8DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.karta_health8DataTable dataTable = new KlassDataSet.karta_health8DataTable();
+            RegDataSet.karta_health8DataTable dataTable = new RegDataSet.karta_health8DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -23745,14 +23873,14 @@ SELECT id_kart, group_health, diagnoz FROM karta_health8 WHERE (id_kart = @id_ka
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.karta_health8DataTable dataTable) {
+        public virtual int Update(RegDataSet.karta_health8DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "karta_health8");
         }
         
@@ -24082,7 +24210,7 @@ SELECT id_kart, group_health, diagnoz FROM karta_health9 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.karta_health9DataTable dataTable) {
+        public virtual int Fill(RegDataSet.karta_health9DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -24095,9 +24223,9 @@ SELECT id_kart, group_health, diagnoz FROM karta_health9 WHERE (id_kart = @id_ka
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.karta_health9DataTable GetData() {
+        public virtual RegDataSet.karta_health9DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.karta_health9DataTable dataTable = new KlassDataSet.karta_health9DataTable();
+            RegDataSet.karta_health9DataTable dataTable = new RegDataSet.karta_health9DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -24105,14 +24233,14 @@ SELECT id_kart, group_health, diagnoz FROM karta_health9 WHERE (id_kart = @id_ka
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.karta_health9DataTable dataTable) {
+        public virtual int Update(RegDataSet.karta_health9DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "karta_health9");
         }
         
@@ -24463,7 +24591,7 @@ SELECT id_klass, name_ruk, phone, adres, id_shcool, name_shcool FROM Klass_ruk W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.Klass_rukDataTable dataTable) {
+        public virtual int Fill(RegDataSet.Klass_rukDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -24476,9 +24604,9 @@ SELECT id_klass, name_ruk, phone, adres, id_shcool, name_shcool FROM Klass_ruk W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.Klass_rukDataTable GetData() {
+        public virtual RegDataSet.Klass_rukDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.Klass_rukDataTable dataTable = new KlassDataSet.Klass_rukDataTable();
+            RegDataSet.Klass_rukDataTable dataTable = new RegDataSet.Klass_rukDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -24486,14 +24614,14 @@ SELECT id_klass, name_ruk, phone, adres, id_shcool, name_shcool FROM Klass_ruk W
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.Klass_rukDataTable dataTable) {
+        public virtual int Update(RegDataSet.Klass_rukDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Klass_ruk");
         }
         
@@ -24935,7 +25063,7 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.posechaemost5DataTable dataTable) {
+        public virtual int Fill(RegDataSet.posechaemost5DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -24948,9 +25076,9 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.posechaemost5DataTable GetData() {
+        public virtual RegDataSet.posechaemost5DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.posechaemost5DataTable dataTable = new KlassDataSet.posechaemost5DataTable();
+            RegDataSet.posechaemost5DataTable dataTable = new RegDataSet.posechaemost5DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -24958,14 +25086,14 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.posechaemost5DataTable dataTable) {
+        public virtual int Update(RegDataSet.posechaemost5DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "posechaemost5");
         }
         
@@ -25435,7 +25563,7 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.posechaemost6DataTable dataTable) {
+        public virtual int Fill(RegDataSet.posechaemost6DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -25448,9 +25576,9 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.posechaemost6DataTable GetData() {
+        public virtual RegDataSet.posechaemost6DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.posechaemost6DataTable dataTable = new KlassDataSet.posechaemost6DataTable();
+            RegDataSet.posechaemost6DataTable dataTable = new RegDataSet.posechaemost6DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -25458,14 +25586,14 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.posechaemost6DataTable dataTable) {
+        public virtual int Update(RegDataSet.posechaemost6DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "posechaemost6");
         }
         
@@ -25935,7 +26063,7 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.posechaemost7DataTable dataTable) {
+        public virtual int Fill(RegDataSet.posechaemost7DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -25948,9 +26076,9 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.posechaemost7DataTable GetData() {
+        public virtual RegDataSet.posechaemost7DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.posechaemost7DataTable dataTable = new KlassDataSet.posechaemost7DataTable();
+            RegDataSet.posechaemost7DataTable dataTable = new RegDataSet.posechaemost7DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -25958,14 +26086,14 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.posechaemost7DataTable dataTable) {
+        public virtual int Update(RegDataSet.posechaemost7DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "posechaemost7");
         }
         
@@ -26435,7 +26563,7 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.posechaemost8DataTable dataTable) {
+        public virtual int Fill(RegDataSet.posechaemost8DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -26448,9 +26576,9 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.posechaemost8DataTable GetData() {
+        public virtual RegDataSet.posechaemost8DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.posechaemost8DataTable dataTable = new KlassDataSet.posechaemost8DataTable();
+            RegDataSet.posechaemost8DataTable dataTable = new RegDataSet.posechaemost8DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -26458,14 +26586,14 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.posechaemost8DataTable dataTable) {
+        public virtual int Update(RegDataSet.posechaemost8DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "posechaemost8");
         }
         
@@ -26935,7 +27063,7 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.posechaemost9DataTable dataTable) {
+        public virtual int Fill(RegDataSet.posechaemost9DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -26948,9 +27076,9 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.posechaemost9DataTable GetData() {
+        public virtual RegDataSet.posechaemost9DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.posechaemost9DataTable dataTable = new KlassDataSet.posechaemost9DataTable();
+            RegDataSet.posechaemost9DataTable dataTable = new RegDataSet.posechaemost9DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -26958,14 +27086,14 @@ SELECT id_pos, po_uvazhit, bez_uvazhit, chet1, chet2, chet3, chet4 FROM posechae
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.posechaemost9DataTable dataTable) {
+        public virtual int Update(RegDataSet.posechaemost9DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "posechaemost9");
         }
         
@@ -27456,7 +27584,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.roditeli5DataTable dataTable) {
+        public virtual int Fill(RegDataSet.roditeli5DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -27469,9 +27597,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.roditeli5DataTable GetData() {
+        public virtual RegDataSet.roditeli5DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.roditeli5DataTable dataTable = new KlassDataSet.roditeli5DataTable();
+            RegDataSet.roditeli5DataTable dataTable = new RegDataSet.roditeli5DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -27479,14 +27607,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.roditeli5DataTable dataTable) {
+        public virtual int Update(RegDataSet.roditeli5DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "roditeli5");
         }
         
@@ -28100,7 +28228,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.roditeli6DataTable dataTable) {
+        public virtual int Fill(RegDataSet.roditeli6DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -28113,9 +28241,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.roditeli6DataTable GetData() {
+        public virtual RegDataSet.roditeli6DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.roditeli6DataTable dataTable = new KlassDataSet.roditeli6DataTable();
+            RegDataSet.roditeli6DataTable dataTable = new RegDataSet.roditeli6DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -28123,14 +28251,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.roditeli6DataTable dataTable) {
+        public virtual int Update(RegDataSet.roditeli6DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "roditeli6");
         }
         
@@ -28744,7 +28872,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.roditeli7DataTable dataTable) {
+        public virtual int Fill(RegDataSet.roditeli7DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -28757,9 +28885,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.roditeli7DataTable GetData() {
+        public virtual RegDataSet.roditeli7DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.roditeli7DataTable dataTable = new KlassDataSet.roditeli7DataTable();
+            RegDataSet.roditeli7DataTable dataTable = new RegDataSet.roditeli7DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -28767,14 +28895,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.roditeli7DataTable dataTable) {
+        public virtual int Update(RegDataSet.roditeli7DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "roditeli7");
         }
         
@@ -29388,7 +29516,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.roditeli8DataTable dataTable) {
+        public virtual int Fill(RegDataSet.roditeli8DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -29401,9 +29529,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.roditeli8DataTable GetData() {
+        public virtual RegDataSet.roditeli8DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.roditeli8DataTable dataTable = new KlassDataSet.roditeli8DataTable();
+            RegDataSet.roditeli8DataTable dataTable = new RegDataSet.roditeli8DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -29411,14 +29539,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.roditeli8DataTable dataTable) {
+        public virtual int Update(RegDataSet.roditeli8DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "roditeli8");
         }
         
@@ -30032,7 +30160,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.roditeli9DataTable dataTable) {
+        public virtual int Fill(RegDataSet.roditeli9DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -30045,9 +30173,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.roditeli9DataTable GetData() {
+        public virtual RegDataSet.roditeli9DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.roditeli9DataTable dataTable = new KlassDataSet.roditeli9DataTable();
+            RegDataSet.roditeli9DataTable dataTable = new RegDataSet.roditeli9DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -30055,14 +30183,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.roditeli9DataTable dataTable) {
+        public virtual int Update(RegDataSet.roditeli9DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "roditeli9");
         }
         
@@ -30599,7 +30727,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.rukDataTable dataTable) {
+        public virtual int Fill(RegDataSet.rukDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -30612,9 +30740,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.rukDataTable GetData() {
+        public virtual RegDataSet.rukDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.rukDataTable dataTable = new KlassDataSet.rukDataTable();
+            RegDataSet.rukDataTable dataTable = new RegDataSet.rukDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -30622,14 +30750,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.rukDataTable dataTable) {
+        public virtual int Update(RegDataSet.rukDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "ruk");
         }
         
@@ -30830,7 +30958,7 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.schoolDataTable dataTable) {
+        public virtual int Fill(RegDataSet.schoolDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -30843,9 +30971,9 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.schoolDataTable GetData() {
+        public virtual RegDataSet.schoolDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.schoolDataTable dataTable = new KlassDataSet.schoolDataTable();
+            RegDataSet.schoolDataTable dataTable = new RegDataSet.schoolDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -30853,14 +30981,14 @@ SELECT id_rod, name_mom, data_rozhdeniya_mom, job_mom, phone_mom, name_dad, data
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.schoolDataTable dataTable) {
+        public virtual int Update(RegDataSet.schoolDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "school");
         }
         
@@ -31203,7 +31331,7 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.students5DataTable dataTable) {
+        public virtual int Fill(RegDataSet.students5DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -31216,9 +31344,9 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.students5DataTable GetData() {
+        public virtual RegDataSet.students5DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.students5DataTable dataTable = new KlassDataSet.students5DataTable();
+            RegDataSet.students5DataTable dataTable = new RegDataSet.students5DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -31226,14 +31354,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.students5DataTable dataTable) {
+        public virtual int Update(RegDataSet.students5DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "students5");
         }
         
@@ -32138,7 +32266,7 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.students6DataTable dataTable) {
+        public virtual int Fill(RegDataSet.students6DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -32151,9 +32279,9 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.students6DataTable GetData() {
+        public virtual RegDataSet.students6DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.students6DataTable dataTable = new KlassDataSet.students6DataTable();
+            RegDataSet.students6DataTable dataTable = new RegDataSet.students6DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -32161,14 +32289,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.students6DataTable dataTable) {
+        public virtual int Update(RegDataSet.students6DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "students6");
         }
         
@@ -33073,7 +33201,7 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.students7DataTable dataTable) {
+        public virtual int Fill(RegDataSet.students7DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -33086,9 +33214,9 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.students7DataTable GetData() {
+        public virtual RegDataSet.students7DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.students7DataTable dataTable = new KlassDataSet.students7DataTable();
+            RegDataSet.students7DataTable dataTable = new RegDataSet.students7DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -33096,14 +33224,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.students7DataTable dataTable) {
+        public virtual int Update(RegDataSet.students7DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "students7");
         }
         
@@ -34008,7 +34136,7 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.students8DataTable dataTable) {
+        public virtual int Fill(RegDataSet.students8DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -34021,9 +34149,9 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.students8DataTable GetData() {
+        public virtual RegDataSet.students8DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.students8DataTable dataTable = new KlassDataSet.students8DataTable();
+            RegDataSet.students8DataTable dataTable = new RegDataSet.students8DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -34031,14 +34159,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.students8DataTable dataTable) {
+        public virtual int Update(RegDataSet.students8DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "students8");
         }
         
@@ -34943,7 +35071,7 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.students9DataTable dataTable) {
+        public virtual int Fill(RegDataSet.students9DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -34956,9 +35084,9 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.students9DataTable GetData() {
+        public virtual RegDataSet.students9DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.students9DataTable dataTable = new KlassDataSet.students9DataTable();
+            RegDataSet.students9DataTable dataTable = new RegDataSet.students9DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -34966,14 +35094,14 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.students9DataTable dataTable) {
+        public virtual int Update(RegDataSet.students9DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "students9");
         }
         
@@ -35708,10 +35836,13 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
             tableMapping.ColumnMappings.Add("Login", "Login");
             tableMapping.ColumnMappings.Add("Password", "Password");
             tableMapping.ColumnMappings.Add("Role", "Role");
+            tableMapping.ColumnMappings.Add("Name", "Name");
+            tableMapping.ColumnMappings.Add("Surname", "Surname");
+            tableMapping.ColumnMappings.Add("Otch", "Otch");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Users] WHERE (([id_user] = @Original_id_user) AND ([Login] = @Original_Login) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Role = 1 AND [Role] IS NULL) OR ([Role] = @Original_Role)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Users] WHERE (([id_user] = @Original_id_user) AND ([Login] = @Original_Login) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Role = 1 AND [Role] IS NULL) OR ([Role] = @Original_Role)) AND ((@IsNull_Name = 1 AND [Name] IS NULL) OR ([Name] = @Original_Name)) AND ((@IsNull_Surname = 1 AND [Surname] IS NULL) OR ([Surname] = @Original_Surname)) AND ((@IsNull_Otch = 1 AND [Otch] IS NULL) OR ([Otch] = @Original_Otch)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_user", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -35719,29 +35850,48 @@ SELECT id_student, id_school, id_klass, name_student, birthday, adres, pol, phon
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Role", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Role", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Role", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Surname", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Surname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Otch", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Otch", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Otch", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Otch", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Users] ([Login], [Password], [Role]) VALUES (@Login, @Password" +
-                ", @Role);\r\nSELECT id_user, Login, Password, Role FROM Users WHERE (id_user = SCO" +
-                "PE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Users] ([Login], [Password], [Role], [Name], [Surname], [Otch]) VALU" +
+                "ES (@Login, @Password, @Role, @Name, @Surname, @Otch);\r\nSELECT id_user, Login, P" +
+                "assword, Role, Name, Surname, Otch FROM Users WHERE (id_user = SCOPE_IDENTITY())" +
+                "";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Role", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Surname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Otch", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Otch", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Users] SET [Login] = @Login, [Password] = @Password, [Role] = @Role WHERE (([id_user] = @Original_id_user) AND ([Login] = @Original_Login) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Role = 1 AND [Role] IS NULL) OR ([Role] = @Original_Role)));
-SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Users] SET [Login] = @Login, [Password] = @Password, [Role] = @Role, [Name] = @Name, [Surname] = @Surname, [Otch] = @Otch WHERE (([id_user] = @Original_id_user) AND ([Login] = @Original_Login) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Role = 1 AND [Role] IS NULL) OR ([Role] = @Original_Role)) AND ((@IsNull_Name = 1 AND [Name] IS NULL) OR ([Name] = @Original_Name)) AND ((@IsNull_Surname = 1 AND [Surname] IS NULL) OR ([Surname] = @Original_Surname)) AND ((@IsNull_Otch = 1 AND [Otch] IS NULL) OR ([Otch] = @Original_Otch)));
+SELECT id_user, Login, Password, Role, Name, Surname, Otch FROM Users WHERE (id_user = @id_user)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Role", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Surname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Otch", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Otch", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_user", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Password", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Role", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Role", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Role", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Surname", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Surname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Surname", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Otch", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Otch", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Otch", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Otch", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_user", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -35758,7 +35908,7 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id_user, Login, Password, Role FROM dbo.Users";
+            this._commandCollection[0].CommandText = "SELECT id_user, Login, Password, Role, Name, Surname, Otch FROM Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -35766,7 +35916,7 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.UsersDataTable dataTable) {
+        public virtual int Fill(RegDataSet.UsersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -35779,9 +35929,9 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.UsersDataTable GetData() {
+        public virtual RegDataSet.UsersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.UsersDataTable dataTable = new KlassDataSet.UsersDataTable();
+            RegDataSet.UsersDataTable dataTable = new RegDataSet.UsersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -35789,14 +35939,14 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.UsersDataTable dataTable) {
+        public virtual int Update(RegDataSet.UsersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Users");
         }
         
@@ -35819,7 +35969,7 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id_user, string Original_Login, string Original_Password, string Original_Role) {
+        public virtual int Delete(int Original_id_user, string Original_Login, string Original_Password, string Original_Role, string Original_Name, string Original_Surname, string Original_Otch) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_user));
             if ((Original_Login == null)) {
                 throw new global::System.ArgumentNullException("Original_Login");
@@ -35843,6 +35993,30 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Role));
             }
+            if ((Original_Name == null)) {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_Name));
+            }
+            if ((Original_Surname == null)) {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_Surname));
+            }
+            if ((Original_Otch == null)) {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_Otch));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -35863,7 +36037,7 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Login, string Password, string Role) {
+        public virtual int Insert(string Login, string Password, string Role, string Name, string Surname, string Otch) {
             if ((Login == null)) {
                 throw new global::System.ArgumentNullException("Login");
             }
@@ -35881,6 +36055,24 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Role));
+            }
+            if ((Name == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Name));
+            }
+            if ((Surname == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Surname));
+            }
+            if ((Otch == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Otch));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -35902,7 +36094,7 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Login, string Password, string Role, int Original_id_user, string Original_Login, string Original_Password, string Original_Role, int id_user) {
+        public virtual int Update(string Login, string Password, string Role, string Name, string Surname, string Otch, int Original_id_user, string Original_Login, string Original_Password, string Original_Role, string Original_Name, string Original_Surname, string Original_Otch, int id_user) {
             if ((Login == null)) {
                 throw new global::System.ArgumentNullException("Login");
             }
@@ -35921,30 +36113,72 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Role));
             }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_id_user));
+            if ((Name == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Name));
+            }
+            if ((Surname == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Surname));
+            }
+            if ((Otch == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Otch));
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_id_user));
             if ((Original_Login == null)) {
                 throw new global::System.ArgumentNullException("Original_Login");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_Login));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Login));
             }
             if ((Original_Password == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Password));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Password));
             }
             if ((Original_Role == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Role));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Role));
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(id_user));
+            if ((Original_Name == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Name));
+            }
+            if ((Original_Surname == null)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Surname));
+            }
+            if ((Original_Otch == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Otch));
+            }
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(id_user));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -35965,8 +36199,8 @@ SELECT id_user, Login, Password, Role FROM Users WHERE (id_user = @id_user)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Login, string Password, string Role, int Original_id_user, string Original_Login, string Original_Password, string Original_Role) {
-            return this.Update(Login, Password, Role, Original_id_user, Original_Login, Original_Password, Original_Role, Original_id_user);
+        public virtual int Update(string Login, string Password, string Role, string Name, string Surname, string Otch, int Original_id_user, string Original_Login, string Original_Password, string Original_Role, string Original_Name, string Original_Surname, string Original_Otch) {
+            return this.Update(Login, Password, Role, Name, Surname, Otch, Original_id_user, Original_Login, Original_Password, Original_Role, Original_Name, Original_Surname, Original_Otch, Original_id_user);
         }
     }
     
@@ -36229,7 +36463,7 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.vedomost5DataTable dataTable) {
+        public virtual int Fill(RegDataSet.vedomost5DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -36242,9 +36476,9 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.vedomost5DataTable GetData() {
+        public virtual RegDataSet.vedomost5DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.vedomost5DataTable dataTable = new KlassDataSet.vedomost5DataTable();
+            RegDataSet.vedomost5DataTable dataTable = new RegDataSet.vedomost5DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -36252,14 +36486,14 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.vedomost5DataTable dataTable) {
+        public virtual int Update(RegDataSet.vedomost5DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "vedomost5");
         }
         
@@ -36968,7 +37202,7 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.vedomost6DataTable dataTable) {
+        public virtual int Fill(RegDataSet.vedomost6DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -36981,9 +37215,9 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.vedomost6DataTable GetData() {
+        public virtual RegDataSet.vedomost6DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.vedomost6DataTable dataTable = new KlassDataSet.vedomost6DataTable();
+            RegDataSet.vedomost6DataTable dataTable = new RegDataSet.vedomost6DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -36991,14 +37225,14 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.vedomost6DataTable dataTable) {
+        public virtual int Update(RegDataSet.vedomost6DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "vedomost6");
         }
         
@@ -37707,7 +37941,7 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.vedomost7DataTable dataTable) {
+        public virtual int Fill(RegDataSet.vedomost7DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -37720,9 +37954,9 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.vedomost7DataTable GetData() {
+        public virtual RegDataSet.vedomost7DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.vedomost7DataTable dataTable = new KlassDataSet.vedomost7DataTable();
+            RegDataSet.vedomost7DataTable dataTable = new RegDataSet.vedomost7DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -37730,14 +37964,14 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.vedomost7DataTable dataTable) {
+        public virtual int Update(RegDataSet.vedomost7DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "vedomost7");
         }
         
@@ -38446,7 +38680,7 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.vedomost8DataTable dataTable) {
+        public virtual int Fill(RegDataSet.vedomost8DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -38459,9 +38693,9 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.vedomost8DataTable GetData() {
+        public virtual RegDataSet.vedomost8DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.vedomost8DataTable dataTable = new KlassDataSet.vedomost8DataTable();
+            RegDataSet.vedomost8DataTable dataTable = new RegDataSet.vedomost8DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -38469,14 +38703,14 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.vedomost8DataTable dataTable) {
+        public virtual int Update(RegDataSet.vedomost8DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "vedomost8");
         }
         
@@ -39185,7 +39419,7 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.vedomost9DataTable dataTable) {
+        public virtual int Fill(RegDataSet.vedomost9DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -39198,9 +39432,9 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.vedomost9DataTable GetData() {
+        public virtual RegDataSet.vedomost9DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.vedomost9DataTable dataTable = new KlassDataSet.vedomost9DataTable();
+            RegDataSet.vedomost9DataTable dataTable = new RegDataSet.vedomost9DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39208,14 +39442,14 @@ SELECT id_ved, fizika, algebra, geometriya, russki_yazik, biologiya, himiya, inf
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.vedomost9DataTable dataTable) {
+        public virtual int Update(RegDataSet.vedomost9DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "vedomost9");
         }
         
@@ -39839,7 +40073,7 @@ SELECT id_student, name_kruzhka FROM vneurochnaya_deyatelnost WHERE (id_student 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.vneurochnaya_deyatelnostDataTable dataTable) {
+        public virtual int Fill(RegDataSet.vneurochnaya_deyatelnostDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -39852,9 +40086,9 @@ SELECT id_student, name_kruzhka FROM vneurochnaya_deyatelnost WHERE (id_student 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.vneurochnaya_deyatelnostDataTable GetData() {
+        public virtual RegDataSet.vneurochnaya_deyatelnostDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.vneurochnaya_deyatelnostDataTable dataTable = new KlassDataSet.vneurochnaya_deyatelnostDataTable();
+            RegDataSet.vneurochnaya_deyatelnostDataTable dataTable = new RegDataSet.vneurochnaya_deyatelnostDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39862,14 +40096,14 @@ SELECT id_student, name_kruzhka FROM vneurochnaya_deyatelnost WHERE (id_student 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.vneurochnaya_deyatelnostDataTable dataTable) {
+        public virtual int Update(RegDataSet.vneurochnaya_deyatelnostDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "vneurochnaya_deyatelnost");
         }
         
@@ -40175,7 +40409,7 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(KlassDataSet.zhurnal_TBDataTable dataTable) {
+        public virtual int Fill(RegDataSet.zhurnal_TBDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -40188,9 +40422,9 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual KlassDataSet.zhurnal_TBDataTable GetData() {
+        public virtual RegDataSet.zhurnal_TBDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            KlassDataSet.zhurnal_TBDataTable dataTable = new KlassDataSet.zhurnal_TBDataTable();
+            RegDataSet.zhurnal_TBDataTable dataTable = new RegDataSet.zhurnal_TBDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40198,14 +40432,14 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet.zhurnal_TBDataTable dataTable) {
+        public virtual int Update(RegDataSet.zhurnal_TBDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(KlassDataSet dataSet) {
+        public virtual int Update(RegDataSet dataSet) {
             return this.Adapter.Update(dataSet, "zhurnal_TB");
         }
         
@@ -41163,7 +41397,7 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(KlassDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(RegDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._instruktionTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.instruktion.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -41461,7 +41695,7 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(KlassDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(RegDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._instruktionTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.instruktion.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -41727,7 +41961,7 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(KlassDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(RegDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._zhurnal_TBTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.zhurnal_TB.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -42017,7 +42251,7 @@ SELECT id_zap, id_klass, id_instruk, date_instruk FROM zhurnal_TB WHERE (id_zap 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(KlassDataSet dataSet) {
+        public virtual int UpdateAll(RegDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

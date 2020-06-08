@@ -19,36 +19,29 @@ namespace Klass
         {
             InitializeComponent();
         }
-
         private void buttonPrint_Click(object sender, EventArgs e)
         {
             printDocument1.Print();
-        }
-        
-
+        }        
             private void buttonPoisk_Click(object sender, EventArgs e)
         {
             students5BindingSource.Filter = "name_student = \'" + textBoxSearch.Text + "\'";
         }
-
         private void buttonDellete_Click(object sender, EventArgs e)
         {
             students5DataGridView.Rows.RemoveAt(students5DataGridView.CurrentCell.RowIndex);
             MessageBox.Show("Запись удалена из базы данных");
         }
-
         private void buttonOtobr_Click(object sender, EventArgs e)
         {
             students5BindingSource.Filter = null;
             textBoxSearch.Clear();
         }
-
         private void buttonSave_Click(object sender, EventArgs e)
         {
             students5TableAdapter.Update(klassDSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
-
         private void FormStudent5_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students5". При необходимости она может быть перемещена или удалена.
@@ -65,7 +58,6 @@ namespace Klass
             textBoxSearch.AutoCompleteCustomSource = SCollection;
             con.Close();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             // создаем приложение Excel  
@@ -95,18 +87,15 @@ namespace Klass
                     worksheet.Cells[i + 2, j + 1] = students5DataGridView.Rows[i].Cells[j].Value.ToString();
                 }
             }
-            // сохранить приложение  
-            
+            // сохранить приложение             
             MessageBox.Show("Данные экспортированы");
         }
-
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Bitmap bmp = new Bitmap(students5DataGridView.Size.Width + 10, students5DataGridView.Size.Height + 10);
             students5DataGridView.DrawToBitmap(bmp, students5DataGridView.Bounds);
             e.Graphics.DrawImage(bmp, 0, 0);
         }
-
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Stud5 k5 = new Stud5();
@@ -115,8 +104,11 @@ namespace Klass
             k5.Show();
             this.Hide();
         }
-
         private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
 
         }

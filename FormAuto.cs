@@ -74,8 +74,6 @@ namespace Klass
                 adapter.SelectCommand = commandagent;
                 adapter.Fill(table);
 
-
-
                 DataTable table1 = new DataTable();
                 SqlDataAdapter adapter1 = new SqlDataAdapter();
                 SqlCommand commandruk5 = new SqlCommand(@"SELECT * FROM [Users] WHERE Login = @uL AND Password = @uP AND Role = 'Руководитель 5кл' ", db.GetConnection());
@@ -172,8 +170,7 @@ namespace Klass
                                     this.Hide();
                                 }
                                 else
-                                    
- MessageBox.Show("Не верный логин или пароль");
+                                    MessageBox.Show("Не верный логин или пароль");
                                 textBoxLogin.Clear();
                                 textBoxPassword.Clear();
                                 a++;

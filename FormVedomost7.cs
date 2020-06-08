@@ -19,6 +19,10 @@ namespace Klass
 
         private void FormVedomost7_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students7". При необходимости она может быть перемещена или удалена.
+            this.students7TableAdapter.Fill(this.klassDataSet.students7);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.vedomost7". При необходимости она может быть перемещена или удалена.
+            this.vedomost7TableAdapter1.Fill(this.klassDataSet.vedomost7);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.vedomost7". При необходимости она может быть перемещена или удалена.
             this.vedomost7TableAdapter.Fill(this.klassDSet.vedomost7);
 
@@ -26,8 +30,15 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            vedomost7TableAdapter.Update(klassDSet);
+            try{ vedomost7TableAdapter1.Update(klassDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)

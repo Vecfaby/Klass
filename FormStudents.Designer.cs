@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.students5DataGridView = new System.Windows.Forms.DataGridView();
             this.students5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klassDSet = new Klass.KlassDSet();
             this.button4 = new System.Windows.Forms.Button();
@@ -40,37 +41,43 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonPoisk = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.students6DataGridView = new System.Windows.Forms.DataGridView();
+            this.students6BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDataSet = new Klass.KlassDataSet();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.students6BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.students7DataGridView = new System.Windows.Forms.DataGridView();
+            this.students7BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.students7BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.students8DataGridView = new System.Windows.Forms.DataGridView();
+            this.students8BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.students8BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.students9DataGridView = new System.Windows.Forms.DataGridView();
+            this.students9BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
-            this.students9BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.students6BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.students6BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.students5TableAdapter = new Klass.KlassDSetTableAdapters.students5TableAdapter();
             this.tableAdapterManager = new Klass.KlassDSetTableAdapters.TableAdapterManager();
@@ -78,122 +85,65 @@
             this.students7TableAdapter = new Klass.KlassDSetTableAdapters.students7TableAdapter();
             this.students8TableAdapter = new Klass.KlassDSetTableAdapters.students8TableAdapter();
             this.students9TableAdapter = new Klass.KlassDSetTableAdapters.students9TableAdapter();
-            this.students5DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.students6TableAdapter1 = new Klass.KlassDataSetTableAdapters.students6TableAdapter();
+            this.klassDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.students8BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.students8TableAdapter1 = new Klass.KlassDataSetTableAdapters.students8TableAdapter();
+            this.students9BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.students9TableAdapter1 = new Klass.KlassDataSetTableAdapters.students9TableAdapter();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.klassDataSet = new Klass.KlassDataSet();
-            this.students6BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.students6TableAdapter1 = new Klass.KlassDataSetTableAdapters.students6TableAdapter();
-            this.students6DataGridView = new System.Windows.Forms.DataGridView();
-            this.idstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idschoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idklassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namestudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthdayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.polDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameparentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passerialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pasnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idrodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idkartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idposDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idvedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.klassDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.students7DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.students8BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.students8TableAdapter1 = new Klass.KlassDataSetTableAdapters.students8TableAdapter();
-            this.students8DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.students9BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.students9TableAdapter1 = new Klass.KlassDataSetTableAdapters.students9TableAdapter();
-            this.students9DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.students7DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students7BindingSource)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.students8DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students8BindingSource)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students6DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students7DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students8BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students8DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students9DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students8BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -225,6 +175,26 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "5 Класс";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // students5DataGridView
+            // 
+            this.students5DataGridView.AutoGenerateColumns = false;
+            this.students5DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.students5DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.students5DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.students5DataGridView.DataSource = this.students5BindingSource;
+            this.students5DataGridView.Location = new System.Drawing.Point(0, 0);
+            this.students5DataGridView.Name = "students5DataGridView";
+            this.students5DataGridView.RowHeadersWidth = 51;
+            this.students5DataGridView.RowTemplate.Height = 24;
+            this.students5DataGridView.Size = new System.Drawing.Size(1371, 506);
+            this.students5DataGridView.TabIndex = 56;
             // 
             // students5BindingSource
             // 
@@ -325,6 +295,36 @@
             this.tabPage2.Text = "6 Класс";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // students6DataGridView
+            // 
+            this.students6DataGridView.AutoGenerateColumns = false;
+            this.students6DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.students6DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.students6DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idklassDataGridViewTextBoxColumn,
+            this.namestudentDataGridViewTextBoxColumn,
+            this.birthdayDataGridViewTextBoxColumn,
+            this.adresDataGridViewTextBoxColumn,
+            this.polDataGridViewTextBoxColumn,
+            this.phonenumberDataGridViewTextBoxColumn});
+            this.students6DataGridView.DataSource = this.students6BindingSource2;
+            this.students6DataGridView.Location = new System.Drawing.Point(0, 3);
+            this.students6DataGridView.Name = "students6DataGridView";
+            this.students6DataGridView.RowHeadersWidth = 51;
+            this.students6DataGridView.RowTemplate.Height = 24;
+            this.students6DataGridView.Size = new System.Drawing.Size(1388, 542);
+            this.students6DataGridView.TabIndex = 66;
+            // 
+            // students6BindingSource2
+            // 
+            this.students6BindingSource2.DataMember = "students6";
+            this.students6BindingSource2.DataSource = this.klassDataSet;
+            // 
+            // klassDataSet
+            // 
+            this.klassDataSet.DataSetName = "KlassDataSet";
+            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -397,11 +397,6 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // students6BindingSource1
-            // 
-            this.students6BindingSource1.DataMember = "students6";
-            this.students6BindingSource1.DataSource = this.klassDSet;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.students7DataGridView);
@@ -418,6 +413,31 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "7 Класс";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // students7DataGridView
+            // 
+            this.students7DataGridView.AutoGenerateColumns = false;
+            this.students7DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.students7DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.students7DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24});
+            this.students7DataGridView.DataSource = this.students7BindingSource;
+            this.students7DataGridView.Location = new System.Drawing.Point(0, 0);
+            this.students7DataGridView.Name = "students7DataGridView";
+            this.students7DataGridView.RowHeadersWidth = 51;
+            this.students7DataGridView.RowTemplate.Height = 24;
+            this.students7DataGridView.Size = new System.Drawing.Size(1388, 561);
+            this.students7DataGridView.TabIndex = 66;
+            // 
+            // students7BindingSource
+            // 
+            this.students7BindingSource.DataMember = "students7";
+            this.students7BindingSource.DataSource = this.klassDSet;
             // 
             // button11
             // 
@@ -491,11 +511,6 @@
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
-            // students7BindingSource
-            // 
-            this.students7BindingSource.DataMember = "students7";
-            this.students7BindingSource.DataSource = this.klassDSet;
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.students8DataGridView);
@@ -512,6 +527,32 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "8 Класс";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // students8DataGridView
+            // 
+            this.students8DataGridView.AutoGenerateColumns = false;
+            this.students8DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.students8DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.students8DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn35,
+            this.dataGridViewTextBoxColumn36,
+            this.dataGridViewTextBoxColumn37,
+            this.dataGridViewTextBoxColumn38,
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn40});
+            this.students8DataGridView.DataSource = this.students8BindingSource;
+            this.students8DataGridView.Location = new System.Drawing.Point(0, 0);
+            this.students8DataGridView.Name = "students8DataGridView";
+            this.students8DataGridView.RowHeadersWidth = 51;
+            this.students8DataGridView.RowTemplate.Height = 24;
+            this.students8DataGridView.Size = new System.Drawing.Size(1388, 561);
+            this.students8DataGridView.TabIndex = 66;
+            this.students8DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.students8DataGridView_CellContentClick);
+            // 
+            // students8BindingSource
+            // 
+            this.students8BindingSource.DataMember = "students8";
+            this.students8BindingSource.DataSource = this.klassDSet;
             // 
             // button17
             // 
@@ -585,11 +626,6 @@
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // students8BindingSource
-            // 
-            this.students8BindingSource.DataMember = "students8";
-            this.students8BindingSource.DataSource = this.klassDSet;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.students9DataGridView);
@@ -606,6 +642,31 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "9 Класс";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // students9DataGridView
+            // 
+            this.students9DataGridView.AutoGenerateColumns = false;
+            this.students9DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.students9DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.students9DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn51,
+            this.dataGridViewTextBoxColumn52,
+            this.dataGridViewTextBoxColumn53,
+            this.dataGridViewTextBoxColumn54,
+            this.dataGridViewTextBoxColumn55,
+            this.dataGridViewTextBoxColumn56});
+            this.students9DataGridView.DataSource = this.students9BindingSource;
+            this.students9DataGridView.Location = new System.Drawing.Point(0, 0);
+            this.students9DataGridView.Name = "students9DataGridView";
+            this.students9DataGridView.RowHeadersWidth = 51;
+            this.students9DataGridView.RowTemplate.Height = 24;
+            this.students9DataGridView.Size = new System.Drawing.Size(1385, 561);
+            this.students9DataGridView.TabIndex = 66;
+            // 
+            // students9BindingSource
+            // 
+            this.students9BindingSource.DataMember = "students9";
+            this.students9BindingSource.DataSource = this.klassDSet;
             // 
             // button23
             // 
@@ -679,10 +740,10 @@
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
-            // students9BindingSource
+            // students6BindingSource1
             // 
-            this.students9BindingSource.DataMember = "students9";
-            this.students9BindingSource.DataSource = this.klassDSet;
+            this.students6BindingSource1.DataMember = "students6";
+            this.students6BindingSource1.DataSource = this.klassDSet;
             // 
             // students6BindingSource
             // 
@@ -746,495 +807,14 @@
             // 
             this.students9TableAdapter.ClearBeforeFill = true;
             // 
-            // students5DataGridView
-            // 
-            this.students5DataGridView.AutoGenerateColumns = false;
-            this.students5DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.students5DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16});
-            this.students5DataGridView.DataSource = this.students5BindingSource;
-            this.students5DataGridView.Location = new System.Drawing.Point(0, 0);
-            this.students5DataGridView.Name = "students5DataGridView";
-            this.students5DataGridView.RowHeadersWidth = 51;
-            this.students5DataGridView.RowTemplate.Height = 24;
-            this.students5DataGridView.Size = new System.Drawing.Size(1371, 506);
-            this.students5DataGridView.TabIndex = 56;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_student";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код ученика";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "id_school";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Код школы";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "id_klass";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Класс";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "name_student";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Полное имя ученика";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "birthday";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Дата рождения";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "adres";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Адрес";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "pol";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Пол";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "phone_number";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Телефон";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "name_parent";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Имя родителя";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "pas_serial";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Серия паспорта";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "pas_number";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Номер паспорта";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "position";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Актив класса";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "id_rod";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Код родителя";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "id_kart";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Код карты ";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "id_pos";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Код посещаемости";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "id_ved";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Код ведомости";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 125;
-            // 
-            // klassDataSet
-            // 
-            this.klassDataSet.DataSetName = "KlassDataSet";
-            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // students6BindingSource2
-            // 
-            this.students6BindingSource2.DataMember = "students6";
-            this.students6BindingSource2.DataSource = this.klassDataSet;
-            // 
             // students6TableAdapter1
             // 
             this.students6TableAdapter1.ClearBeforeFill = true;
-            // 
-            // students6DataGridView
-            // 
-            this.students6DataGridView.AutoGenerateColumns = false;
-            this.students6DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.students6DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idstudentDataGridViewTextBoxColumn,
-            this.idschoolDataGridViewTextBoxColumn,
-            this.idklassDataGridViewTextBoxColumn,
-            this.namestudentDataGridViewTextBoxColumn,
-            this.birthdayDataGridViewTextBoxColumn,
-            this.adresDataGridViewTextBoxColumn,
-            this.polDataGridViewTextBoxColumn,
-            this.phonenumberDataGridViewTextBoxColumn,
-            this.nameparentDataGridViewTextBoxColumn,
-            this.passerialDataGridViewTextBoxColumn,
-            this.pasnumberDataGridViewTextBoxColumn,
-            this.positionDataGridViewTextBoxColumn,
-            this.idrodDataGridViewTextBoxColumn,
-            this.idkartDataGridViewTextBoxColumn,
-            this.idposDataGridViewTextBoxColumn,
-            this.idvedDataGridViewTextBoxColumn});
-            this.students6DataGridView.DataSource = this.students6BindingSource2;
-            this.students6DataGridView.Location = new System.Drawing.Point(0, 3);
-            this.students6DataGridView.Name = "students6DataGridView";
-            this.students6DataGridView.RowHeadersWidth = 51;
-            this.students6DataGridView.RowTemplate.Height = 24;
-            this.students6DataGridView.Size = new System.Drawing.Size(1388, 542);
-            this.students6DataGridView.TabIndex = 66;
-            // 
-            // idstudentDataGridViewTextBoxColumn
-            // 
-            this.idstudentDataGridViewTextBoxColumn.DataPropertyName = "id_student";
-            this.idstudentDataGridViewTextBoxColumn.HeaderText = "Код студента";
-            this.idstudentDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idstudentDataGridViewTextBoxColumn.Name = "idstudentDataGridViewTextBoxColumn";
-            this.idstudentDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idschoolDataGridViewTextBoxColumn
-            // 
-            this.idschoolDataGridViewTextBoxColumn.DataPropertyName = "id_school";
-            this.idschoolDataGridViewTextBoxColumn.HeaderText = "Код школы";
-            this.idschoolDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idschoolDataGridViewTextBoxColumn.Name = "idschoolDataGridViewTextBoxColumn";
-            this.idschoolDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idklassDataGridViewTextBoxColumn
-            // 
-            this.idklassDataGridViewTextBoxColumn.DataPropertyName = "id_klass";
-            this.idklassDataGridViewTextBoxColumn.HeaderText = "Класс";
-            this.idklassDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idklassDataGridViewTextBoxColumn.Name = "idklassDataGridViewTextBoxColumn";
-            this.idklassDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // namestudentDataGridViewTextBoxColumn
-            // 
-            this.namestudentDataGridViewTextBoxColumn.DataPropertyName = "name_student";
-            this.namestudentDataGridViewTextBoxColumn.HeaderText = "Полное имя ученика";
-            this.namestudentDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.namestudentDataGridViewTextBoxColumn.Name = "namestudentDataGridViewTextBoxColumn";
-            this.namestudentDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // birthdayDataGridViewTextBoxColumn
-            // 
-            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
-            this.birthdayDataGridViewTextBoxColumn.HeaderText = "Дата рождения";
-            this.birthdayDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
-            this.birthdayDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // adresDataGridViewTextBoxColumn
-            // 
-            this.adresDataGridViewTextBoxColumn.DataPropertyName = "adres";
-            this.adresDataGridViewTextBoxColumn.HeaderText = "Адрес";
-            this.adresDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adresDataGridViewTextBoxColumn.Name = "adresDataGridViewTextBoxColumn";
-            this.adresDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // polDataGridViewTextBoxColumn
-            // 
-            this.polDataGridViewTextBoxColumn.DataPropertyName = "pol";
-            this.polDataGridViewTextBoxColumn.HeaderText = "Пол";
-            this.polDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.polDataGridViewTextBoxColumn.Name = "polDataGridViewTextBoxColumn";
-            this.polDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phonenumberDataGridViewTextBoxColumn
-            // 
-            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
-            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Нормер телефона";
-            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
-            this.phonenumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nameparentDataGridViewTextBoxColumn
-            // 
-            this.nameparentDataGridViewTextBoxColumn.DataPropertyName = "name_parent";
-            this.nameparentDataGridViewTextBoxColumn.HeaderText = "Имя родителя";
-            this.nameparentDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameparentDataGridViewTextBoxColumn.Name = "nameparentDataGridViewTextBoxColumn";
-            this.nameparentDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // passerialDataGridViewTextBoxColumn
-            // 
-            this.passerialDataGridViewTextBoxColumn.DataPropertyName = "pas_serial";
-            this.passerialDataGridViewTextBoxColumn.HeaderText = "Серия паспорта";
-            this.passerialDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.passerialDataGridViewTextBoxColumn.Name = "passerialDataGridViewTextBoxColumn";
-            this.passerialDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // pasnumberDataGridViewTextBoxColumn
-            // 
-            this.pasnumberDataGridViewTextBoxColumn.DataPropertyName = "pas_number";
-            this.pasnumberDataGridViewTextBoxColumn.HeaderText = "Номер паспорта";
-            this.pasnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pasnumberDataGridViewTextBoxColumn.Name = "pasnumberDataGridViewTextBoxColumn";
-            this.pasnumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "Актив класса";
-            this.positionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            this.positionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idrodDataGridViewTextBoxColumn
-            // 
-            this.idrodDataGridViewTextBoxColumn.DataPropertyName = "id_rod";
-            this.idrodDataGridViewTextBoxColumn.HeaderText = "Код родителя";
-            this.idrodDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idrodDataGridViewTextBoxColumn.Name = "idrodDataGridViewTextBoxColumn";
-            this.idrodDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idkartDataGridViewTextBoxColumn
-            // 
-            this.idkartDataGridViewTextBoxColumn.DataPropertyName = "id_kart";
-            this.idkartDataGridViewTextBoxColumn.HeaderText = "Код карты";
-            this.idkartDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idkartDataGridViewTextBoxColumn.Name = "idkartDataGridViewTextBoxColumn";
-            this.idkartDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idposDataGridViewTextBoxColumn
-            // 
-            this.idposDataGridViewTextBoxColumn.DataPropertyName = "id_pos";
-            this.idposDataGridViewTextBoxColumn.HeaderText = "Код посещаемости";
-            this.idposDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idposDataGridViewTextBoxColumn.Name = "idposDataGridViewTextBoxColumn";
-            this.idposDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idvedDataGridViewTextBoxColumn
-            // 
-            this.idvedDataGridViewTextBoxColumn.DataPropertyName = "id_ved";
-            this.idvedDataGridViewTextBoxColumn.HeaderText = "Код ведомсти";
-            this.idvedDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idvedDataGridViewTextBoxColumn.Name = "idvedDataGridViewTextBoxColumn";
-            this.idvedDataGridViewTextBoxColumn.Width = 125;
             // 
             // klassDataSetBindingSource
             // 
             this.klassDataSetBindingSource.DataSource = this.klassDataSet;
             this.klassDataSetBindingSource.Position = 0;
-            // 
-            // students7DataGridView
-            // 
-            this.students7DataGridView.AutoGenerateColumns = false;
-            this.students7DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.students7DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32});
-            this.students7DataGridView.DataSource = this.students7BindingSource;
-            this.students7DataGridView.Location = new System.Drawing.Point(0, 0);
-            this.students7DataGridView.Name = "students7DataGridView";
-            this.students7DataGridView.RowHeadersWidth = 51;
-            this.students7DataGridView.RowTemplate.Height = 24;
-            this.students7DataGridView.Size = new System.Drawing.Size(1388, 561);
-            this.students7DataGridView.TabIndex = 66;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "id_student";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Код студента";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "id_school";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Код школы";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "id_klass";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Класс";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "name_student";
-            this.dataGridViewTextBoxColumn20.HeaderText = "Полное имя ученика";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "birthday";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Дата рождежния";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "adres";
-            this.dataGridViewTextBoxColumn22.HeaderText = "Адрес";
-            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "pol";
-            this.dataGridViewTextBoxColumn23.HeaderText = "Пол";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "phone_number";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Номер телефона";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "name_parent";
-            this.dataGridViewTextBoxColumn25.HeaderText = "Имя родителя";
-            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "pas_serial";
-            this.dataGridViewTextBoxColumn26.HeaderText = "Серия паспорта";
-            this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "pas_number";
-            this.dataGridViewTextBoxColumn27.HeaderText = "Номер паспорта";
-            this.dataGridViewTextBoxColumn27.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "position";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Актив класса";
-            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "id_rod";
-            this.dataGridViewTextBoxColumn29.HeaderText = "Код родителя";
-            this.dataGridViewTextBoxColumn29.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "id_kart";
-            this.dataGridViewTextBoxColumn30.HeaderText = "Код карты";
-            this.dataGridViewTextBoxColumn30.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "id_pos";
-            this.dataGridViewTextBoxColumn31.HeaderText = "Код посещаемости";
-            this.dataGridViewTextBoxColumn31.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "id_ved";
-            this.dataGridViewTextBoxColumn32.HeaderText = "Код ведомости";
-            this.dataGridViewTextBoxColumn32.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.Width = 125;
             // 
             // students8BindingSource1
             // 
@@ -1245,164 +825,6 @@
             // 
             this.students8TableAdapter1.ClearBeforeFill = true;
             // 
-            // students8DataGridView
-            // 
-            this.students8DataGridView.AutoGenerateColumns = false;
-            this.students8DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.students8DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36,
-            this.dataGridViewTextBoxColumn37,
-            this.dataGridViewTextBoxColumn38,
-            this.dataGridViewTextBoxColumn39,
-            this.dataGridViewTextBoxColumn40,
-            this.dataGridViewTextBoxColumn41,
-            this.dataGridViewTextBoxColumn42,
-            this.dataGridViewTextBoxColumn43,
-            this.dataGridViewTextBoxColumn44,
-            this.dataGridViewTextBoxColumn45,
-            this.dataGridViewTextBoxColumn46,
-            this.dataGridViewTextBoxColumn47,
-            this.dataGridViewTextBoxColumn48});
-            this.students8DataGridView.DataSource = this.students8BindingSource;
-            this.students8DataGridView.Location = new System.Drawing.Point(0, 0);
-            this.students8DataGridView.Name = "students8DataGridView";
-            this.students8DataGridView.RowHeadersWidth = 51;
-            this.students8DataGridView.RowTemplate.Height = 24;
-            this.students8DataGridView.Size = new System.Drawing.Size(1388, 561);
-            this.students8DataGridView.TabIndex = 66;
-            this.students8DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.students8DataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "id_student";
-            this.dataGridViewTextBoxColumn33.HeaderText = "Код студента";
-            this.dataGridViewTextBoxColumn33.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "id_school";
-            this.dataGridViewTextBoxColumn34.HeaderText = "Код школы";
-            this.dataGridViewTextBoxColumn34.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "id_klass";
-            this.dataGridViewTextBoxColumn35.HeaderText = "Класс";
-            this.dataGridViewTextBoxColumn35.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "name_student";
-            this.dataGridViewTextBoxColumn36.HeaderText = "Полное имя ученика";
-            this.dataGridViewTextBoxColumn36.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "birthday";
-            this.dataGridViewTextBoxColumn37.HeaderText = "Дата рождения";
-            this.dataGridViewTextBoxColumn37.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.DataPropertyName = "adres";
-            this.dataGridViewTextBoxColumn38.HeaderText = "Адрес";
-            this.dataGridViewTextBoxColumn38.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            this.dataGridViewTextBoxColumn38.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "pol";
-            this.dataGridViewTextBoxColumn39.HeaderText = "Пол";
-            this.dataGridViewTextBoxColumn39.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "phone_number";
-            this.dataGridViewTextBoxColumn40.HeaderText = "Номер телефона";
-            this.dataGridViewTextBoxColumn40.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "name_parent";
-            this.dataGridViewTextBoxColumn41.HeaderText = "Имя родителя";
-            this.dataGridViewTextBoxColumn41.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn42
-            // 
-            this.dataGridViewTextBoxColumn42.DataPropertyName = "pas_serial";
-            this.dataGridViewTextBoxColumn42.HeaderText = "Серия паспорта";
-            this.dataGridViewTextBoxColumn42.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
-            this.dataGridViewTextBoxColumn42.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn43
-            // 
-            this.dataGridViewTextBoxColumn43.DataPropertyName = "pas_number";
-            this.dataGridViewTextBoxColumn43.HeaderText = "Номер паспорта";
-            this.dataGridViewTextBoxColumn43.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
-            this.dataGridViewTextBoxColumn43.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn44
-            // 
-            this.dataGridViewTextBoxColumn44.DataPropertyName = "position";
-            this.dataGridViewTextBoxColumn44.HeaderText = "Актив класса";
-            this.dataGridViewTextBoxColumn44.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
-            this.dataGridViewTextBoxColumn44.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn45
-            // 
-            this.dataGridViewTextBoxColumn45.DataPropertyName = "id_rod";
-            this.dataGridViewTextBoxColumn45.HeaderText = "Код родителя";
-            this.dataGridViewTextBoxColumn45.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
-            this.dataGridViewTextBoxColumn45.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn46
-            // 
-            this.dataGridViewTextBoxColumn46.DataPropertyName = "id_kart";
-            this.dataGridViewTextBoxColumn46.HeaderText = "Код карты";
-            this.dataGridViewTextBoxColumn46.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
-            this.dataGridViewTextBoxColumn46.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn47
-            // 
-            this.dataGridViewTextBoxColumn47.DataPropertyName = "id_pos";
-            this.dataGridViewTextBoxColumn47.HeaderText = "Код посещаемости";
-            this.dataGridViewTextBoxColumn47.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
-            this.dataGridViewTextBoxColumn47.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn48
-            // 
-            this.dataGridViewTextBoxColumn48.DataPropertyName = "id_ved";
-            this.dataGridViewTextBoxColumn48.HeaderText = "Код ведомости";
-            this.dataGridViewTextBoxColumn48.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            this.dataGridViewTextBoxColumn48.Width = 125;
-            // 
             // students9BindingSource1
             // 
             this.students9BindingSource1.DataMember = "students9";
@@ -1412,50 +834,173 @@
             // 
             this.students9TableAdapter1.ClearBeforeFill = true;
             // 
-            // students9DataGridView
+            // dataGridViewTextBoxColumn3
             // 
-            this.students9DataGridView.AutoGenerateColumns = false;
-            this.students9DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.students9DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn49,
-            this.dataGridViewTextBoxColumn50,
-            this.dataGridViewTextBoxColumn51,
-            this.dataGridViewTextBoxColumn52,
-            this.dataGridViewTextBoxColumn53,
-            this.dataGridViewTextBoxColumn54,
-            this.dataGridViewTextBoxColumn55,
-            this.dataGridViewTextBoxColumn56,
-            this.dataGridViewTextBoxColumn57,
-            this.dataGridViewTextBoxColumn58,
-            this.dataGridViewTextBoxColumn59,
-            this.dataGridViewTextBoxColumn60,
-            this.dataGridViewTextBoxColumn61,
-            this.dataGridViewTextBoxColumn62,
-            this.dataGridViewTextBoxColumn63,
-            this.dataGridViewTextBoxColumn64});
-            this.students9DataGridView.DataSource = this.students9BindingSource;
-            this.students9DataGridView.Location = new System.Drawing.Point(0, 0);
-            this.students9DataGridView.Name = "students9DataGridView";
-            this.students9DataGridView.RowHeadersWidth = 51;
-            this.students9DataGridView.RowTemplate.Height = 24;
-            this.students9DataGridView.Size = new System.Drawing.Size(1385, 561);
-            this.students9DataGridView.TabIndex = 66;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "id_klass";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Класс";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // dataGridViewTextBoxColumn49
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn49.DataPropertyName = "id_student";
-            this.dataGridViewTextBoxColumn49.HeaderText = "Код студента";
-            this.dataGridViewTextBoxColumn49.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn49.Name = "dataGridViewTextBoxColumn49";
-            this.dataGridViewTextBoxColumn49.Width = 125;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "name_student";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Полное имя ученика";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // dataGridViewTextBoxColumn50
+            // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn50.DataPropertyName = "id_school";
-            this.dataGridViewTextBoxColumn50.HeaderText = "Код школы";
-            this.dataGridViewTextBoxColumn50.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn50.Name = "dataGridViewTextBoxColumn50";
-            this.dataGridViewTextBoxColumn50.Width = 125;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "birthday";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Дата рождения";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "adres";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "pol";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Пол";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "phone_number";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Телефон";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // idklassDataGridViewTextBoxColumn
+            // 
+            this.idklassDataGridViewTextBoxColumn.DataPropertyName = "id_klass";
+            this.idklassDataGridViewTextBoxColumn.HeaderText = "Класс";
+            this.idklassDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idklassDataGridViewTextBoxColumn.Name = "idklassDataGridViewTextBoxColumn";
+            // 
+            // namestudentDataGridViewTextBoxColumn
+            // 
+            this.namestudentDataGridViewTextBoxColumn.DataPropertyName = "name_student";
+            this.namestudentDataGridViewTextBoxColumn.HeaderText = "Полное имя ученика";
+            this.namestudentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namestudentDataGridViewTextBoxColumn.Name = "namestudentDataGridViewTextBoxColumn";
+            // 
+            // birthdayDataGridViewTextBoxColumn
+            // 
+            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.HeaderText = "Дата рождения";
+            this.birthdayDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
+            // 
+            // adresDataGridViewTextBoxColumn
+            // 
+            this.adresDataGridViewTextBoxColumn.DataPropertyName = "adres";
+            this.adresDataGridViewTextBoxColumn.HeaderText = "Адрес";
+            this.adresDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adresDataGridViewTextBoxColumn.Name = "adresDataGridViewTextBoxColumn";
+            // 
+            // polDataGridViewTextBoxColumn
+            // 
+            this.polDataGridViewTextBoxColumn.DataPropertyName = "pol";
+            this.polDataGridViewTextBoxColumn.HeaderText = "Пол";
+            this.polDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.polDataGridViewTextBoxColumn.Name = "polDataGridViewTextBoxColumn";
+            // 
+            // phonenumberDataGridViewTextBoxColumn
+            // 
+            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
+            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Нормер телефона";
+            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "id_klass";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Класс";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "name_student";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Полное имя ученика";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "birthday";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Дата рождежния";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "adres";
+            this.dataGridViewTextBoxColumn22.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "pol";
+            this.dataGridViewTextBoxColumn23.HeaderText = "Пол";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "phone_number";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Номер телефона";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "id_klass";
+            this.dataGridViewTextBoxColumn35.HeaderText = "Класс";
+            this.dataGridViewTextBoxColumn35.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "name_student";
+            this.dataGridViewTextBoxColumn36.HeaderText = "Полное имя ученика";
+            this.dataGridViewTextBoxColumn36.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "birthday";
+            this.dataGridViewTextBoxColumn37.HeaderText = "Дата рождения";
+            this.dataGridViewTextBoxColumn37.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            // 
+            // dataGridViewTextBoxColumn38
+            // 
+            this.dataGridViewTextBoxColumn38.DataPropertyName = "adres";
+            this.dataGridViewTextBoxColumn38.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn38.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "pol";
+            this.dataGridViewTextBoxColumn39.HeaderText = "Пол";
+            this.dataGridViewTextBoxColumn39.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "phone_number";
+            this.dataGridViewTextBoxColumn40.HeaderText = "Номер телефона";
+            this.dataGridViewTextBoxColumn40.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
             // 
             // dataGridViewTextBoxColumn51
             // 
@@ -1463,7 +1008,6 @@
             this.dataGridViewTextBoxColumn51.HeaderText = "Класс";
             this.dataGridViewTextBoxColumn51.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
-            this.dataGridViewTextBoxColumn51.Width = 125;
             // 
             // dataGridViewTextBoxColumn52
             // 
@@ -1471,7 +1015,6 @@
             this.dataGridViewTextBoxColumn52.HeaderText = "Полное имя ученика";
             this.dataGridViewTextBoxColumn52.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
-            this.dataGridViewTextBoxColumn52.Width = 125;
             // 
             // dataGridViewTextBoxColumn53
             // 
@@ -1479,7 +1022,6 @@
             this.dataGridViewTextBoxColumn53.HeaderText = "Дата рождения";
             this.dataGridViewTextBoxColumn53.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
-            this.dataGridViewTextBoxColumn53.Width = 125;
             // 
             // dataGridViewTextBoxColumn54
             // 
@@ -1487,7 +1029,6 @@
             this.dataGridViewTextBoxColumn54.HeaderText = "Адрес";
             this.dataGridViewTextBoxColumn54.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
-            this.dataGridViewTextBoxColumn54.Width = 125;
             // 
             // dataGridViewTextBoxColumn55
             // 
@@ -1495,7 +1036,6 @@
             this.dataGridViewTextBoxColumn55.HeaderText = "Пол";
             this.dataGridViewTextBoxColumn55.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
-            this.dataGridViewTextBoxColumn55.Width = 125;
             // 
             // dataGridViewTextBoxColumn56
             // 
@@ -1503,71 +1043,6 @@
             this.dataGridViewTextBoxColumn56.HeaderText = "Номер телефона";
             this.dataGridViewTextBoxColumn56.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn56.Name = "dataGridViewTextBoxColumn56";
-            this.dataGridViewTextBoxColumn56.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn57
-            // 
-            this.dataGridViewTextBoxColumn57.DataPropertyName = "name_parent";
-            this.dataGridViewTextBoxColumn57.HeaderText = "Имя родителя";
-            this.dataGridViewTextBoxColumn57.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn57.Name = "dataGridViewTextBoxColumn57";
-            this.dataGridViewTextBoxColumn57.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn58
-            // 
-            this.dataGridViewTextBoxColumn58.DataPropertyName = "pas_serial";
-            this.dataGridViewTextBoxColumn58.HeaderText = "Серия паспорта";
-            this.dataGridViewTextBoxColumn58.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn58.Name = "dataGridViewTextBoxColumn58";
-            this.dataGridViewTextBoxColumn58.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn59
-            // 
-            this.dataGridViewTextBoxColumn59.DataPropertyName = "pas_number";
-            this.dataGridViewTextBoxColumn59.HeaderText = "Номер паспорта";
-            this.dataGridViewTextBoxColumn59.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn59.Name = "dataGridViewTextBoxColumn59";
-            this.dataGridViewTextBoxColumn59.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn60
-            // 
-            this.dataGridViewTextBoxColumn60.DataPropertyName = "position";
-            this.dataGridViewTextBoxColumn60.HeaderText = "Актив класса";
-            this.dataGridViewTextBoxColumn60.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn60.Name = "dataGridViewTextBoxColumn60";
-            this.dataGridViewTextBoxColumn60.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn61
-            // 
-            this.dataGridViewTextBoxColumn61.DataPropertyName = "id_rod";
-            this.dataGridViewTextBoxColumn61.HeaderText = "Код родителя";
-            this.dataGridViewTextBoxColumn61.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
-            this.dataGridViewTextBoxColumn61.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn62
-            // 
-            this.dataGridViewTextBoxColumn62.DataPropertyName = "id_kart";
-            this.dataGridViewTextBoxColumn62.HeaderText = "Код карты";
-            this.dataGridViewTextBoxColumn62.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
-            this.dataGridViewTextBoxColumn62.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn63
-            // 
-            this.dataGridViewTextBoxColumn63.DataPropertyName = "id_pos";
-            this.dataGridViewTextBoxColumn63.HeaderText = "Код посещаемости";
-            this.dataGridViewTextBoxColumn63.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
-            this.dataGridViewTextBoxColumn63.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn64
-            // 
-            this.dataGridViewTextBoxColumn64.DataPropertyName = "id_ved";
-            this.dataGridViewTextBoxColumn64.HeaderText = "Код ведомости";
-            this.dataGridViewTextBoxColumn64.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
-            this.dataGridViewTextBoxColumn64.Width = 125;
             // 
             // FormStudents
             // 
@@ -1580,27 +1055,27 @@
             this.Load += new System.EventHandler(this.FormStudents_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students5BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.students7DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students7BindingSource)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.students8DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students8BindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students5DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students6DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.klassDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students7DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students8BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students8DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.students9DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students6BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students8BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1657,97 +1132,47 @@
         private KlassDSetTableAdapters.students9TableAdapter students9TableAdapter;
         private System.Windows.Forms.BindingSource students6BindingSource1;
         private System.Windows.Forms.DataGridView students5DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private KlassDataSet klassDataSet;
+        private System.Windows.Forms.BindingSource students6BindingSource2;
+        private KlassDataSetTableAdapters.students6TableAdapter students6TableAdapter1;
+        private System.Windows.Forms.DataGridView students6DataGridView;
+        private System.Windows.Forms.BindingSource klassDataSetBindingSource;
+        private System.Windows.Forms.DataGridView students7DataGridView;
+        private System.Windows.Forms.BindingSource students8BindingSource1;
+        private KlassDataSetTableAdapters.students8TableAdapter students8TableAdapter1;
+        private System.Windows.Forms.DataGridView students8DataGridView;
+        private System.Windows.Forms.BindingSource students9BindingSource1;
+        private KlassDataSetTableAdapters.students9TableAdapter students9TableAdapter1;
+        private System.Windows.Forms.DataGridView students9DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private KlassDataSet klassDataSet;
-        private System.Windows.Forms.BindingSource students6BindingSource2;
-        private KlassDataSetTableAdapters.students6TableAdapter students6TableAdapter1;
-        private System.Windows.Forms.DataGridView students6DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idstudentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idschoolDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idklassDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namestudentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn birthdayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn adresDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn polDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameparentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passerialDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pasnumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idrodDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idkartDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idposDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idvedDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource klassDataSetBindingSource;
-        private System.Windows.Forms.DataGridView students7DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
-        private System.Windows.Forms.BindingSource students8BindingSource1;
-        private KlassDataSetTableAdapters.students8TableAdapter students8TableAdapter1;
-        private System.Windows.Forms.DataGridView students8DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
-        private System.Windows.Forms.BindingSource students9BindingSource1;
-        private KlassDataSetTableAdapters.students9TableAdapter students9TableAdapter1;
-        private System.Windows.Forms.DataGridView students9DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn51;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn52;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn53;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn54;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn55;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn56;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn57;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn58;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn59;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn60;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
     }
 }

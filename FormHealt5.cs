@@ -21,6 +21,8 @@ namespace Klass
 
         private void FormHealt5_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students5". При необходимости она может быть перемещена или удалена.
+            this.students5TableAdapter.Fill(this.klassDSet.students5);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.karta_health5". При необходимости она может быть перемещена или удалена.
             this.karta_health5TableAdapter.Fill(this.klassDSet.karta_health5);
 
@@ -28,9 +30,17 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
+            try { 
             karta_health5TableAdapter.Update(klassDSet);
             MessageBox.Show("Изменения сохранены в базе данных");
         }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Для того чтобы удалить данную запись, необходимо удалить строку с данными об ученике из окна Список учащихся 5 класса !");
+
+            }
+}
 
         private void buttonDellete_Click(object sender, EventArgs e)
         

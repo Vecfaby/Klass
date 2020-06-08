@@ -30,19 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.students9DataGridView = new System.Windows.Forms.DataGridView();
-            this.students9BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.klassDSet = new Klass.KlassDSet();
-            this.buttonPrint = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.buttonPoisk = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.buttonDellete = new System.Windows.Forms.Button();
-            this.buttonOtobr = new System.Windows.Forms.Button();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
-            this.students9TableAdapter = new Klass.KlassDSetTableAdapters.students9TableAdapter();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.idstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idschoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idklassDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +46,19 @@
             this.idkartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idposDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idvedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.students9BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDSet = new Klass.KlassDSet();
+            this.buttonPrint = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.buttonPoisk = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonDellete = new System.Windows.Forms.Button();
+            this.buttonOtobr = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.students9TableAdapter = new Klass.KlassDSetTableAdapters.students9TableAdapter();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.students9DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.students9BindingSource)).BeginInit();
@@ -94,124 +94,6 @@
             this.students9DataGridView.Size = new System.Drawing.Size(1371, 503);
             this.students9DataGridView.TabIndex = 65;
             this.students9DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.students5DataGridView_CellContentClick);
-            // 
-            // students9BindingSource
-            // 
-            this.students9BindingSource.DataMember = "students9";
-            this.students9BindingSource.DataSource = this.klassDSet;
-            // 
-            // klassDSet
-            // 
-            this.klassDSet.DataSetName = "KlassDSet";
-            this.klassDSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // buttonPrint
-            // 
-            this.buttonPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonPrint.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPrint.Location = new System.Drawing.Point(981, 635);
-            this.buttonPrint.Name = "buttonPrint";
-            this.buttonPrint.Size = new System.Drawing.Size(187, 67);
-            this.buttonPrint.TabIndex = 66;
-            this.buttonPrint.Text = "Печать";
-            this.buttonPrint.UseCompatibleTextRendering = true;
-            this.buttonPrint.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(981, 562);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(187, 67);
-            this.button4.TabIndex = 64;
-            this.button4.Text = "Экспорт в Эксель";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // buttonPoisk
-            // 
-            this.buttonPoisk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonPoisk.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPoisk.Location = new System.Drawing.Point(488, 561);
-            this.buttonPoisk.Name = "buttonPoisk";
-            this.buttonPoisk.Size = new System.Drawing.Size(187, 67);
-            this.buttonPoisk.TabIndex = 63;
-            this.buttonPoisk.Text = "Найти";
-            this.buttonPoisk.UseVisualStyleBackColor = false;
-            this.buttonPoisk.Click += new System.EventHandler(this.buttonPoisk_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(69, 596);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 29);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "Введите имя ученика:";
-            // 
-            // textBoxSearch
-            // 
-            this.textBoxSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.textBoxSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBoxSearch.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSearch.Location = new System.Drawing.Point(21, 651);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(361, 35);
-            this.textBoxSearch.TabIndex = 61;
-            // 
-            // buttonDellete
-            // 
-            this.buttonDellete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonDellete.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDellete.Location = new System.Drawing.Point(739, 635);
-            this.buttonDellete.Name = "buttonDellete";
-            this.buttonDellete.Size = new System.Drawing.Size(187, 67);
-            this.buttonDellete.TabIndex = 60;
-            this.buttonDellete.Text = "Удалить";
-            this.buttonDellete.UseVisualStyleBackColor = false;
-            this.buttonDellete.Click += new System.EventHandler(this.buttonDellete_Click);
-            // 
-            // buttonOtobr
-            // 
-            this.buttonOtobr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonOtobr.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOtobr.Location = new System.Drawing.Point(488, 635);
-            this.buttonOtobr.Name = "buttonOtobr";
-            this.buttonOtobr.Size = new System.Drawing.Size(187, 67);
-            this.buttonOtobr.TabIndex = 59;
-            this.buttonOtobr.Text = "Отобразить все";
-            this.buttonOtobr.UseVisualStyleBackColor = false;
-            this.buttonOtobr.Click += new System.EventHandler(this.buttonOtobr_Click);
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonSave.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSave.Location = new System.Drawing.Point(739, 561);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(187, 67);
-            this.buttonSave.TabIndex = 58;
-            this.buttonSave.Text = "Сохранить";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonBack.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBack.Location = new System.Drawing.Point(1196, 635);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(187, 67);
-            this.buttonBack.TabIndex = 57;
-            this.buttonBack.Text = "Назад";
-            this.buttonBack.UseVisualStyleBackColor = false;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
-            // students9TableAdapter
-            // 
-            this.students9TableAdapter.ClearBeforeFill = true;
             // 
             // idstudentDataGridViewTextBoxColumn
             // 
@@ -340,6 +222,129 @@
             this.idvedDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idvedDataGridViewTextBoxColumn.Name = "idvedDataGridViewTextBoxColumn";
             this.idvedDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // students9BindingSource
+            // 
+            this.students9BindingSource.DataMember = "students9";
+            this.students9BindingSource.DataSource = this.klassDSet;
+            // 
+            // klassDSet
+            // 
+            this.klassDSet.DataSetName = "KlassDSet";
+            this.klassDSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonPrint
+            // 
+            this.buttonPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonPrint.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonPrint.Location = new System.Drawing.Point(981, 635);
+            this.buttonPrint.Name = "buttonPrint";
+            this.buttonPrint.Size = new System.Drawing.Size(187, 67);
+            this.buttonPrint.TabIndex = 66;
+            this.buttonPrint.Text = "Печать";
+            this.buttonPrint.UseCompatibleTextRendering = true;
+            this.buttonPrint.UseVisualStyleBackColor = false;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(981, 562);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(187, 67);
+            this.button4.TabIndex = 64;
+            this.button4.Text = "Экспорт в Эксель";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // buttonPoisk
+            // 
+            this.buttonPoisk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonPoisk.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonPoisk.Location = new System.Drawing.Point(488, 561);
+            this.buttonPoisk.Name = "buttonPoisk";
+            this.buttonPoisk.Size = new System.Drawing.Size(187, 67);
+            this.buttonPoisk.TabIndex = 63;
+            this.buttonPoisk.Text = "Найти";
+            this.buttonPoisk.UseVisualStyleBackColor = false;
+            this.buttonPoisk.Click += new System.EventHandler(this.buttonPoisk_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(69, 596);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(292, 29);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Введите имя ученика:";
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBoxSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxSearch.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSearch.Location = new System.Drawing.Point(21, 651);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(361, 35);
+            this.textBoxSearch.TabIndex = 61;
+            // 
+            // buttonDellete
+            // 
+            this.buttonDellete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonDellete.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDellete.Location = new System.Drawing.Point(739, 635);
+            this.buttonDellete.Name = "buttonDellete";
+            this.buttonDellete.Size = new System.Drawing.Size(187, 67);
+            this.buttonDellete.TabIndex = 60;
+            this.buttonDellete.Text = "Удалить";
+            this.buttonDellete.UseVisualStyleBackColor = false;
+            this.buttonDellete.Click += new System.EventHandler(this.buttonDellete_Click);
+            // 
+            // buttonOtobr
+            // 
+            this.buttonOtobr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonOtobr.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOtobr.Location = new System.Drawing.Point(488, 635);
+            this.buttonOtobr.Name = "buttonOtobr";
+            this.buttonOtobr.Size = new System.Drawing.Size(187, 67);
+            this.buttonOtobr.TabIndex = 59;
+            this.buttonOtobr.Text = "Отобразить все";
+            this.buttonOtobr.UseVisualStyleBackColor = false;
+            this.buttonOtobr.Click += new System.EventHandler(this.buttonOtobr_Click);
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonSave.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSave.Location = new System.Drawing.Point(739, 561);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(187, 67);
+            this.buttonSave.TabIndex = 58;
+            this.buttonSave.Text = "Сохранить";
+            this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonBack.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Location = new System.Drawing.Point(1196, 635);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(187, 67);
+            this.buttonBack.TabIndex = 57;
+            this.buttonBack.Text = "Назад";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // students9TableAdapter
+            // 
+            this.students9TableAdapter.ClearBeforeFill = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // label2
             // 

@@ -68,6 +68,7 @@
             // students5DataGridView
             // 
             this.students5DataGridView.AutoGenerateColumns = false;
+            this.students5DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.students5DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.students5DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idstudentDataGridViewTextBoxColumn,
@@ -100,7 +101,7 @@
             this.idstudentDataGridViewTextBoxColumn.HeaderText = "Код ученика";
             this.idstudentDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idstudentDataGridViewTextBoxColumn.Name = "idstudentDataGridViewTextBoxColumn";
-            this.idstudentDataGridViewTextBoxColumn.Width = 125;
+            this.idstudentDataGridViewTextBoxColumn.Width = 110;
             // 
             // idschoolDataGridViewTextBoxColumn
             // 
@@ -108,7 +109,7 @@
             this.idschoolDataGridViewTextBoxColumn.HeaderText = "Код школы";
             this.idschoolDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idschoolDataGridViewTextBoxColumn.Name = "idschoolDataGridViewTextBoxColumn";
-            this.idschoolDataGridViewTextBoxColumn.Width = 125;
+            this.idschoolDataGridViewTextBoxColumn.Width = 101;
             // 
             // idklassDataGridViewTextBoxColumn
             // 
@@ -116,7 +117,7 @@
             this.idklassDataGridViewTextBoxColumn.HeaderText = "Класс";
             this.idklassDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idklassDataGridViewTextBoxColumn.Name = "idklassDataGridViewTextBoxColumn";
-            this.idklassDataGridViewTextBoxColumn.Width = 125;
+            this.idklassDataGridViewTextBoxColumn.Width = 76;
             // 
             // namestudentDataGridViewTextBoxColumn
             // 
@@ -124,7 +125,7 @@
             this.namestudentDataGridViewTextBoxColumn.HeaderText = "Полное имя ученика";
             this.namestudentDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.namestudentDataGridViewTextBoxColumn.Name = "namestudentDataGridViewTextBoxColumn";
-            this.namestudentDataGridViewTextBoxColumn.Width = 125;
+            this.namestudentDataGridViewTextBoxColumn.Width = 159;
             // 
             // birthdayDataGridViewTextBoxColumn
             // 
@@ -132,7 +133,7 @@
             this.birthdayDataGridViewTextBoxColumn.HeaderText = "Дата рождения";
             this.birthdayDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
-            this.birthdayDataGridViewTextBoxColumn.Width = 125;
+            this.birthdayDataGridViewTextBoxColumn.Width = 128;
             // 
             // adresDataGridViewTextBoxColumn
             // 
@@ -140,7 +141,7 @@
             this.adresDataGridViewTextBoxColumn.HeaderText = "Адрес";
             this.adresDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.adresDataGridViewTextBoxColumn.Name = "adresDataGridViewTextBoxColumn";
-            this.adresDataGridViewTextBoxColumn.Width = 125;
+            this.adresDataGridViewTextBoxColumn.Width = 77;
             // 
             // polDataGridViewTextBoxColumn
             // 
@@ -148,7 +149,7 @@
             this.polDataGridViewTextBoxColumn.HeaderText = "Пол";
             this.polDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.polDataGridViewTextBoxColumn.Name = "polDataGridViewTextBoxColumn";
-            this.polDataGridViewTextBoxColumn.Width = 125;
+            this.polDataGridViewTextBoxColumn.Width = 63;
             // 
             // phonenumberDataGridViewTextBoxColumn
             // 
@@ -156,7 +157,7 @@
             this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Телефон";
             this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
-            this.phonenumberDataGridViewTextBoxColumn.Width = 125;
+            this.phonenumberDataGridViewTextBoxColumn.Width = 97;
             // 
             // nameparentDataGridViewTextBoxColumn
             // 
@@ -164,7 +165,7 @@
             this.nameparentDataGridViewTextBoxColumn.HeaderText = "Имя родителя";
             this.nameparentDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameparentDataGridViewTextBoxColumn.Name = "nameparentDataGridViewTextBoxColumn";
-            this.nameparentDataGridViewTextBoxColumn.Width = 125;
+            this.nameparentDataGridViewTextBoxColumn.Width = 120;
             // 
             // passerialDataGridViewTextBoxColumn
             // 
@@ -172,7 +173,7 @@
             this.passerialDataGridViewTextBoxColumn.HeaderText = "Серия паспорта";
             this.passerialDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.passerialDataGridViewTextBoxColumn.Name = "passerialDataGridViewTextBoxColumn";
-            this.passerialDataGridViewTextBoxColumn.Width = 125;
+            this.passerialDataGridViewTextBoxColumn.Width = 132;
             // 
             // pasnumberDataGridViewTextBoxColumn
             // 
@@ -180,7 +181,7 @@
             this.pasnumberDataGridViewTextBoxColumn.HeaderText = "Номер паспорта";
             this.pasnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.pasnumberDataGridViewTextBoxColumn.Name = "pasnumberDataGridViewTextBoxColumn";
-            this.pasnumberDataGridViewTextBoxColumn.Width = 125;
+            this.pasnumberDataGridViewTextBoxColumn.Width = 134;
             // 
             // positionDataGridViewTextBoxColumn
             // 
@@ -188,7 +189,7 @@
             this.positionDataGridViewTextBoxColumn.HeaderText = "Актив класса";
             this.positionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            this.positionDataGridViewTextBoxColumn.Width = 125;
+            this.positionDataGridViewTextBoxColumn.Width = 114;
             // 
             // idrodDataGridViewTextBoxColumn
             // 
@@ -196,7 +197,7 @@
             this.idrodDataGridViewTextBoxColumn.HeaderText = "Код родителя";
             this.idrodDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idrodDataGridViewTextBoxColumn.Name = "idrodDataGridViewTextBoxColumn";
-            this.idrodDataGridViewTextBoxColumn.Width = 125;
+            this.idrodDataGridViewTextBoxColumn.Width = 118;
             // 
             // idkartDataGridViewTextBoxColumn
             // 
@@ -204,7 +205,7 @@
             this.idkartDataGridViewTextBoxColumn.HeaderText = "Код карты ";
             this.idkartDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idkartDataGridViewTextBoxColumn.Name = "idkartDataGridViewTextBoxColumn";
-            this.idkartDataGridViewTextBoxColumn.Width = 125;
+            this.idkartDataGridViewTextBoxColumn.Width = 101;
             // 
             // idposDataGridViewTextBoxColumn
             // 
@@ -212,7 +213,7 @@
             this.idposDataGridViewTextBoxColumn.HeaderText = "Код посещаемости";
             this.idposDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idposDataGridViewTextBoxColumn.Name = "idposDataGridViewTextBoxColumn";
-            this.idposDataGridViewTextBoxColumn.Width = 125;
+            this.idposDataGridViewTextBoxColumn.Width = 149;
             // 
             // idvedDataGridViewTextBoxColumn
             // 
@@ -288,6 +289,7 @@
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(361, 35);
             this.textBoxSearch.TabIndex = 51;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // buttonDellete
             // 

@@ -19,6 +19,10 @@ namespace Klass
 
         private void FormVedomost9_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students9". При необходимости она может быть перемещена или удалена.
+            this.students9TableAdapter.Fill(this.klassDataSet.students9);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.vedomost9". При необходимости она может быть перемещена или удалена.
+            this.vedomost9TableAdapter1.Fill(this.klassDataSet.vedomost9);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.vedomost9". При необходимости она может быть перемещена или удалена.
             this.vedomost9TableAdapter.Fill(this.klassDSet.vedomost9);
 
@@ -26,8 +30,16 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            vedomost9TableAdapter.Update(klassDSet);
+            try { 
+            vedomost9TableAdapter1.Update(klassDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
@@ -47,6 +59,7 @@ namespace Klass
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try { 
             double sum = 0, aver = 0;
             int count = 0;
             foreach (DataGridViewCell cell in vedomost9DataGridView.SelectedCells)
@@ -60,6 +73,13 @@ namespace Klass
             }
             aver = sum / count;
             MessageBox.Show(aver.ToString(), "Средняя оценка ");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
     }
 }

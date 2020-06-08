@@ -75,5 +75,14 @@ namespace Klass
         {
             Application.Exit();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormAutor aaa = new FormAutor();
+            aaa.Left = this.Left;
+            aaa.Top = this.Top;
+            aaa.Show();
+            
+        }
     }
 }

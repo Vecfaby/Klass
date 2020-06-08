@@ -31,7 +31,6 @@
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonzapisi = new System.Windows.Forms.Button();
             this.buttonZhur = new System.Windows.Forms.Button();
-            this.buttonVneur = new System.Windows.Forms.Button();
             this.buttonStud = new System.Windows.Forms.Button();
             this.buttonRuk = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,7 +40,7 @@
             // 
             this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonExit.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonExit.Location = new System.Drawing.Point(466, 407);
+            this.buttonExit.Location = new System.Drawing.Point(329, 412);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(187, 73);
             this.buttonExit.TabIndex = 33;
@@ -54,7 +53,7 @@
             // 
             this.buttonzapisi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonzapisi.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonzapisi.Location = new System.Drawing.Point(187, 407);
+            this.buttonzapisi.Location = new System.Drawing.Point(459, 286);
             this.buttonzapisi.Name = "buttonzapisi";
             this.buttonzapisi.Size = new System.Drawing.Size(187, 73);
             this.buttonzapisi.TabIndex = 32;
@@ -66,7 +65,7 @@
             // 
             this.buttonZhur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonZhur.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonZhur.Location = new System.Drawing.Point(187, 274);
+            this.buttonZhur.Location = new System.Drawing.Point(214, 286);
             this.buttonZhur.Name = "buttonZhur";
             this.buttonZhur.Size = new System.Drawing.Size(187, 73);
             this.buttonZhur.TabIndex = 31;
@@ -74,27 +73,15 @@
             this.buttonZhur.UseVisualStyleBackColor = false;
             this.buttonZhur.Click += new System.EventHandler(this.buttonZhur_Click);
             // 
-            // buttonVneur
-            // 
-            this.buttonVneur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonVneur.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonVneur.Location = new System.Drawing.Point(466, 274);
-            this.buttonVneur.Name = "buttonVneur";
-            this.buttonVneur.Size = new System.Drawing.Size(187, 73);
-            this.buttonVneur.TabIndex = 30;
-            this.buttonVneur.Text = "Внеурочная деятельность";
-            this.buttonVneur.UseVisualStyleBackColor = false;
-            this.buttonVneur.Click += new System.EventHandler(this.buttonVneur_Click);
-            // 
             // buttonStud
             // 
             this.buttonStud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonStud.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonStud.Location = new System.Drawing.Point(466, 142);
+            this.buttonStud.Location = new System.Drawing.Point(459, 148);
             this.buttonStud.Name = "buttonStud";
             this.buttonStud.Size = new System.Drawing.Size(187, 73);
             this.buttonStud.TabIndex = 29;
-            this.buttonStud.Text = "Ученики";
+            this.buttonStud.Text = "Учащиеся";
             this.buttonStud.UseVisualStyleBackColor = false;
             this.buttonStud.Click += new System.EventHandler(this.buttonStud_Click);
             // 
@@ -102,7 +89,7 @@
             // 
             this.buttonRuk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonRuk.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRuk.Location = new System.Drawing.Point(187, 142);
+            this.buttonRuk.Location = new System.Drawing.Point(225, 148);
             this.buttonRuk.Name = "buttonRuk";
             this.buttonRuk.Size = new System.Drawing.Size(187, 73);
             this.buttonRuk.TabIndex = 28;
@@ -126,16 +113,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(840, 623);
+            this.ClientSize = new System.Drawing.Size(848, 623);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonzapisi);
             this.Controls.Add(this.buttonZhur);
-            this.Controls.Add(this.buttonVneur);
             this.Controls.Add(this.buttonStud);
             this.Controls.Add(this.buttonRuk);
             this.Name = "FormMenu";
             this.Text = "Главное меню";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,7 +133,6 @@
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonzapisi;
         private System.Windows.Forms.Button buttonZhur;
-        private System.Windows.Forms.Button buttonVneur;
         private System.Windows.Forms.Button buttonStud;
         private System.Windows.Forms.Button buttonRuk;
         private System.Windows.Forms.Label label1;

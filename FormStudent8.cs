@@ -27,7 +27,7 @@ namespace Klass
 
         private void buttonPrint_Click(object sender, EventArgs e)
         {
-
+            printDocument1.Print();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -121,6 +121,13 @@ namespace Klass
             }
             textBoxSearch.AutoCompleteCustomSource = SCollection;
             con.Close();
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bmp = new Bitmap(students8DataGridView.Size.Width + 10, students8DataGridView.Size.Height + 10);
+            students8DataGridView.DrawToBitmap(bmp, students8DataGridView.Bounds);
+            e.Graphics.DrawImage(bmp, 0, 0);
         }
     }
 }

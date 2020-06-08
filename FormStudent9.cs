@@ -107,5 +107,17 @@ namespace Klass
             k9.Show();
             this.Hide();
         }
+
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+            printDocument1.Print();
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bmp = new Bitmap(students9DataGridView.Size.Width + 10, students9DataGridView.Size.Height + 10);
+            students9DataGridView.DrawToBitmap(bmp, students9DataGridView.Bounds);
+            e.Graphics.DrawImage(bmp, 0, 0);
+        }
     }
 }

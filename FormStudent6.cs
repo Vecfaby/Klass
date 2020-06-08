@@ -27,7 +27,7 @@ namespace Klass
 
         private void buttonPrint_Click(object sender, EventArgs e)
         {
-
+            printDocument1.Print();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace Klass
 
         private void buttonPoisk_Click(object sender, EventArgs e)
         {
-            students6BindingSource.Filter = "name_student = \'" + textBoxSearch.Text + "\'";
+            students6BindingSource2.Filter = "name_student = \'" + textBoxSearch.Text + "\'";
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -19,6 +19,10 @@ namespace Klass
 
         private void FormHealt9_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students9". При необходимости она может быть перемещена или удалена.
+            this.students9TableAdapter.Fill(this.klassDataSet.students9);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.karta_health9". При необходимости она может быть перемещена или удалена.
+            this.karta_health9TableAdapter1.Fill(this.klassDataSet.karta_health9);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.karta_health9". При необходимости она может быть перемещена или удалена.
             this.karta_health9TableAdapter.Fill(this.klassDSet.karta_health9);
 
@@ -26,8 +30,16 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            karta_health9TableAdapter.Update(klassDSet);
+            try { 
+            karta_health9TableAdapter1.Update(klassDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)

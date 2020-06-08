@@ -103,17 +103,18 @@
             // instDataGridView
             // 
             this.instDataGridView.AutoGenerateColumns = false;
+            this.instDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.instDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.instDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idinstrukDataGridViewTextBoxColumn,
             this.numberinstrukDataGridViewTextBoxColumn,
             this.nameinstrukDataGridViewTextBoxColumn});
             this.instDataGridView.DataSource = this.instruktionBindingSource1;
-            this.instDataGridView.Location = new System.Drawing.Point(493, 75);
+            this.instDataGridView.Location = new System.Drawing.Point(383, 63);
             this.instDataGridView.Name = "instDataGridView";
             this.instDataGridView.RowHeadersWidth = 51;
             this.instDataGridView.RowTemplate.Height = 24;
-            this.instDataGridView.Size = new System.Drawing.Size(432, 449);
+            this.instDataGridView.Size = new System.Drawing.Size(567, 449);
             this.instDataGridView.TabIndex = 76;
             // 
             // idinstrukDataGridViewTextBoxColumn
@@ -122,7 +123,6 @@
             this.idinstrukDataGridViewTextBoxColumn.HeaderText = "Код инструктажа";
             this.idinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idinstrukDataGridViewTextBoxColumn.Name = "idinstrukDataGridViewTextBoxColumn";
-            this.idinstrukDataGridViewTextBoxColumn.Width = 125;
             // 
             // numberinstrukDataGridViewTextBoxColumn
             // 
@@ -130,7 +130,6 @@
             this.numberinstrukDataGridViewTextBoxColumn.HeaderText = "Номер инструктажа";
             this.numberinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numberinstrukDataGridViewTextBoxColumn.Name = "numberinstrukDataGridViewTextBoxColumn";
-            this.numberinstrukDataGridViewTextBoxColumn.Width = 125;
             // 
             // nameinstrukDataGridViewTextBoxColumn
             // 
@@ -138,7 +137,6 @@
             this.nameinstrukDataGridViewTextBoxColumn.HeaderText = "Название инструктажа";
             this.nameinstrukDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameinstrukDataGridViewTextBoxColumn.Name = "nameinstrukDataGridViewTextBoxColumn";
-            this.nameinstrukDataGridViewTextBoxColumn.Width = 125;
             // 
             // instruktionBindingSource1
             // 

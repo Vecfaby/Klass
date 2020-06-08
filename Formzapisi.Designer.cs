@@ -39,16 +39,31 @@
             this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter1 = new Klass.KlassDaSetTableAdapters.UsersTableAdapter();
             this.tableAdapterManager = new Klass.KlassDaSetTableAdapters.TableAdapterManager();
-            this.usersDataGridView = new System.Windows.Forms.DataGridView();
+            this.usersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.regDataSet = new Klass.RegDataSet();
             this.label2 = new System.Windows.Forms.Label();
+            this.usersTableAdapter2 = new Klass.RegDataSetTableAdapters.UsersTableAdapter();
+            this.tableAdapterManager1 = new Klass.RegDataSetTableAdapters.TableAdapterManager();
+            this.usersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDataSet1 = new Klass.KlassDataSet1();
+            this.klassDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter3 = new Klass.KlassDataSet1TableAdapters.UsersTableAdapter();
+            this.tableAdapterManager2 = new Klass.KlassDataSet1TableAdapters.TableAdapterManager();
+            this.usersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,22 +168,15 @@
             this.tableAdapterManager.vneurochnaya_deyatelnostTableAdapter = null;
             this.tableAdapterManager.zhurnal_TBTableAdapter = null;
             // 
-            // usersDataGridView
+            // usersBindingSource2
             // 
-            this.usersDataGridView.AutoGenerateColumns = false;
-            this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.usersDataGridView.DataSource = this.usersBindingSource1;
-            this.usersDataGridView.Location = new System.Drawing.Point(137, 64);
-            this.usersDataGridView.Name = "usersDataGridView";
-            this.usersDataGridView.RowHeadersWidth = 51;
-            this.usersDataGridView.RowTemplate.Height = 24;
-            this.usersDataGridView.Size = new System.Drawing.Size(555, 420);
-            this.usersDataGridView.TabIndex = 70;
+            this.usersBindingSource2.DataMember = "Users";
+            this.usersBindingSource2.DataSource = this.regDataSet;
+            // 
+            // regDataSet
+            // 
+            this.regDataSet.DataSetName = "RegDataSet";
+            this.regDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -180,6 +188,93 @@
             this.label2.Size = new System.Drawing.Size(259, 40);
             this.label2.TabIndex = 79;
             this.label2.Text = "Учетные записи";
+            // 
+            // usersTableAdapter2
+            // 
+            this.usersTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.instruktionTableAdapter = null;
+            this.tableAdapterManager1.karta_health5TableAdapter = null;
+            this.tableAdapterManager1.karta_health6TableAdapter = null;
+            this.tableAdapterManager1.karta_health7TableAdapter = null;
+            this.tableAdapterManager1.karta_health8TableAdapter = null;
+            this.tableAdapterManager1.karta_health9TableAdapter = null;
+            this.tableAdapterManager1.Klass_rukTableAdapter = null;
+            this.tableAdapterManager1.posechaemost5TableAdapter = null;
+            this.tableAdapterManager1.posechaemost6TableAdapter = null;
+            this.tableAdapterManager1.posechaemost7TableAdapter = null;
+            this.tableAdapterManager1.posechaemost8TableAdapter = null;
+            this.tableAdapterManager1.posechaemost9TableAdapter = null;
+            this.tableAdapterManager1.roditeli5TableAdapter = null;
+            this.tableAdapterManager1.roditeli6TableAdapter = null;
+            this.tableAdapterManager1.roditeli7TableAdapter = null;
+            this.tableAdapterManager1.roditeli8TableAdapter = null;
+            this.tableAdapterManager1.roditeli9TableAdapter = null;
+            this.tableAdapterManager1.rukTableAdapter = null;
+            this.tableAdapterManager1.schoolTableAdapter = null;
+            this.tableAdapterManager1.students5TableAdapter = null;
+            this.tableAdapterManager1.students6TableAdapter = null;
+            this.tableAdapterManager1.students7TableAdapter = null;
+            this.tableAdapterManager1.students8TableAdapter = null;
+            this.tableAdapterManager1.students9TableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = Klass.RegDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UsersTableAdapter = this.usersTableAdapter2;
+            this.tableAdapterManager1.vedomost5TableAdapter = null;
+            this.tableAdapterManager1.vedomost6TableAdapter = null;
+            this.tableAdapterManager1.vedomost7TableAdapter = null;
+            this.tableAdapterManager1.vedomost8TableAdapter = null;
+            this.tableAdapterManager1.vedomost9TableAdapter = null;
+            this.tableAdapterManager1.vneurochnaya_deyatelnostTableAdapter = null;
+            this.tableAdapterManager1.zhurnal_TBTableAdapter = null;
+            // 
+            // usersBindingSource3
+            // 
+            this.usersBindingSource3.DataMember = "Users";
+            this.usersBindingSource3.DataSource = this.regDataSet;
+            // 
+            // klassDataSet1
+            // 
+            this.klassDataSet1.DataSetName = "KlassDataSet1";
+            this.klassDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // klassDataSet1BindingSource
+            // 
+            this.klassDataSet1BindingSource.DataSource = this.klassDataSet1;
+            this.klassDataSet1BindingSource.Position = 0;
+            // 
+            // usersBindingSource4
+            // 
+            this.usersBindingSource4.DataMember = "Users";
+            this.usersBindingSource4.DataSource = this.klassDataSet1;
+            // 
+            // usersTableAdapter3
+            // 
+            this.usersTableAdapter3.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager2
+            // 
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.UpdateOrder = Klass.KlassDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager2.UsersTableAdapter = this.usersTableAdapter3;
+            // 
+            // usersDataGridView
+            // 
+            this.usersDataGridView.AutoGenerateColumns = false;
+            this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.usersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn4});
+            this.usersDataGridView.DataSource = this.usersBindingSource4;
+            this.usersDataGridView.Location = new System.Drawing.Point(97, 69);
+            this.usersDataGridView.Name = "usersDataGridView";
+            this.usersDataGridView.RowHeadersWidth = 51;
+            this.usersDataGridView.RowTemplate.Height = 24;
+            this.usersDataGridView.Size = new System.Drawing.Size(645, 362);
+            this.usersDataGridView.TabIndex = 79;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -198,18 +293,10 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Password";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Пароль";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Role";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Роль/Должность";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Должность";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
@@ -219,9 +306,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(819, 647);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(910, 647);
             this.Controls.Add(this.usersDataGridView);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonDellete);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBack);
@@ -232,6 +319,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDaSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,11 +342,20 @@
         private System.Windows.Forms.BindingSource usersBindingSource1;
         private KlassDaSetTableAdapters.UsersTableAdapter usersTableAdapter1;
         private KlassDaSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView usersDataGridView;
         private System.Windows.Forms.Label label2;
+        private RegDataSet regDataSet;
+        private System.Windows.Forms.BindingSource usersBindingSource2;
+        private RegDataSetTableAdapters.UsersTableAdapter usersTableAdapter2;
+        private RegDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.BindingSource usersBindingSource3;
+        private KlassDataSet1 klassDataSet1;
+        private System.Windows.Forms.BindingSource klassDataSet1BindingSource;
+        private System.Windows.Forms.BindingSource usersBindingSource4;
+        private KlassDataSet1TableAdapters.UsersTableAdapter usersTableAdapter3;
+        private KlassDataSet1TableAdapters.TableAdapterManager tableAdapterManager2;
+        private System.Windows.Forms.DataGridView usersDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

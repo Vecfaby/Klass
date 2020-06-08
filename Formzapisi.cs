@@ -19,6 +19,9 @@ namespace Klass
 
         private void Formzapisi_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet1.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter3.Fill(this.klassDataSet1.Users);
+            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDaSet.Users". При необходимости она может быть перемещена или удалена.
             this.usersTableAdapter1.Fill(this.klassDaSet.Users);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.Users". При необходимости она может быть перемещена или удалена.

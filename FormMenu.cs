@@ -16,7 +16,6 @@ namespace Klass
         {
             InitializeComponent();
         }
-
         private void buttonRuk_Click(object sender, EventArgs e)
         {
             FormRuk ruk = new FormRuk();
@@ -25,7 +24,6 @@ namespace Klass
             ruk.Show();
             this.Hide();
         }
-
         private void buttonStud_Click(object sender, EventArgs e)
         {
             FormStudents stud = new FormStudents();
@@ -34,7 +32,6 @@ namespace Klass
             stud.Show();
             this.Hide();
         }
-
         private void buttonZhur_Click(object sender, EventArgs e)
         {
             FormZhurnal zh = new FormZhurnal();
@@ -43,7 +40,6 @@ namespace Klass
             zh.Show();
             this.Hide();
         }
-
         private void buttonVneur_Click(object sender, EventArgs e)
         {
             FormVneurochnaya vn = new FormVneurochnaya();
@@ -52,7 +48,6 @@ namespace Klass
             vn.Show();
             this.Hide();
         }
-
         private void buttonzapisi_Click(object sender, EventArgs e)
         {
             Formzapisi z = new Formzapisi();
@@ -61,10 +56,12 @@ namespace Klass
             z.Show();
             this.Hide();
         }
-
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
         }
     }
 }

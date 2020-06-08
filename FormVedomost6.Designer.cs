@@ -51,10 +51,22 @@
             this.obchestvoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.klassDataSet = new Klass.KlassDataSet();
+            this.vedomost6BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.vedomost6TableAdapter1 = new Klass.KlassDataSetTableAdapters.vedomost6TableAdapter();
+            this.fKstudents6vedomost6BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.students6TableAdapter = new Klass.KlassDataSetTableAdapters.students6TableAdapter();
+            this.namestudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vedomost6BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vedomost6BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vedomost6DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vedomost6BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKstudents6vedomost6BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDellete
@@ -130,12 +142,12 @@
             this.izoDataGridViewTextBoxColumn,
             this.istoriyaDataGridViewTextBoxColumn,
             this.obchestvoDataGridViewTextBoxColumn});
-            this.vedomost6DataGridView.DataSource = this.vedomost6BindingSource1;
+            this.vedomost6DataGridView.DataSource = this.vedomost6BindingSource2;
             this.vedomost6DataGridView.Location = new System.Drawing.Point(51, 53);
             this.vedomost6DataGridView.Name = "vedomost6DataGridView";
             this.vedomost6DataGridView.RowHeadersWidth = 51;
             this.vedomost6DataGridView.RowTemplate.Height = 24;
-            this.vedomost6DataGridView.Size = new System.Drawing.Size(1265, 504);
+            this.vedomost6DataGridView.Size = new System.Drawing.Size(1265, 471);
             this.vedomost6DataGridView.TabIndex = 68;
             // 
             // idvedDataGridViewTextBoxColumn
@@ -257,12 +269,70 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.namestudentDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.fKstudents6vedomost6BindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(263, 528);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(434, 71);
+            this.dataGridView2.TabIndex = 79;
+            // 
+            // klassDataSet
+            // 
+            this.klassDataSet.DataSetName = "KlassDataSet";
+            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vedomost6BindingSource2
+            // 
+            this.vedomost6BindingSource2.DataMember = "vedomost6";
+            this.vedomost6BindingSource2.DataSource = this.klassDataSet;
+            // 
+            // vedomost6TableAdapter1
+            // 
+            this.vedomost6TableAdapter1.ClearBeforeFill = true;
+            // 
+            // fKstudents6vedomost6BindingSource
+            // 
+            this.fKstudents6vedomost6BindingSource.DataMember = "FK_students6_vedomost6";
+            this.fKstudents6vedomost6BindingSource.DataSource = this.vedomost6BindingSource2;
+            // 
+            // students6TableAdapter
+            // 
+            this.students6TableAdapter.ClearBeforeFill = true;
+            // 
+            // namestudentDataGridViewTextBoxColumn
+            // 
+            this.namestudentDataGridViewTextBoxColumn.DataPropertyName = "name_student";
+            this.namestudentDataGridViewTextBoxColumn.HeaderText = "Имя ученика";
+            this.namestudentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namestudentDataGridViewTextBoxColumn.Name = "namestudentDataGridViewTextBoxColumn";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(725, 528);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(437, 58);
+            this.label1.TabIndex = 80;
+            this.label1.Text = "Если поле \"Имя ученика\" заполнено, \r\nто удаление записи невозможно!";
+            // 
             // FormVedomost6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.vedomost6DataGridView);
@@ -276,6 +346,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.vedomost6BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vedomost6BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vedomost6DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vedomost6BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKstudents6vedomost6BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +378,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn obchestvoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private KlassDataSet klassDataSet;
+        private System.Windows.Forms.BindingSource vedomost6BindingSource2;
+        private KlassDataSetTableAdapters.vedomost6TableAdapter vedomost6TableAdapter1;
+        private System.Windows.Forms.BindingSource fKstudents6vedomost6BindingSource;
+        private KlassDataSetTableAdapters.students6TableAdapter students6TableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namestudentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }

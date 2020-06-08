@@ -33,6 +33,8 @@
             this.idkartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grouphealthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diagnozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kartahealth8BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.klassDataSet = new Klass.KlassDataSet();
             this.kartahealth8BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klassDSet = new Klass.KlassDSet();
             this.buttonDellete = new System.Windows.Forms.Button();
@@ -40,9 +42,19 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.karta_health8TableAdapter = new Klass.KlassDSetTableAdapters.karta_health8TableAdapter();
             this.label1 = new System.Windows.Forms.Label();
+            this.karta_health8TableAdapter1 = new Klass.KlassDataSetTableAdapters.karta_health8TableAdapter();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.namestudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKstudents8kartahealth8BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.students8TableAdapter = new Klass.KlassDataSetTableAdapters.students8TableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.karta_health8DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartahealth8BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kartahealth8BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKstudents8kartahealth8BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // karta_health8DataGridView
@@ -54,8 +66,8 @@
             this.idkartDataGridViewTextBoxColumn,
             this.grouphealthDataGridViewTextBoxColumn,
             this.diagnozDataGridViewTextBoxColumn});
-            this.karta_health8DataGridView.DataSource = this.kartahealth8BindingSource;
-            this.karta_health8DataGridView.Location = new System.Drawing.Point(443, 63);
+            this.karta_health8DataGridView.DataSource = this.kartahealth8BindingSource1;
+            this.karta_health8DataGridView.Location = new System.Drawing.Point(132, 52);
             this.karta_health8DataGridView.Name = "karta_health8DataGridView";
             this.karta_health8DataGridView.RowHeadersWidth = 51;
             this.karta_health8DataGridView.RowTemplate.Height = 24;
@@ -82,6 +94,16 @@
             this.diagnozDataGridViewTextBoxColumn.HeaderText = "Диагноз";
             this.diagnozDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diagnozDataGridViewTextBoxColumn.Name = "diagnozDataGridViewTextBoxColumn";
+            // 
+            // kartahealth8BindingSource1
+            // 
+            this.kartahealth8BindingSource1.DataMember = "karta_health8";
+            this.kartahealth8BindingSource1.DataSource = this.klassDataSet;
+            // 
+            // klassDataSet
+            // 
+            this.klassDataSet.DataSetName = "KlassDataSet";
+            this.klassDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kartahealth8BindingSource
             // 
@@ -144,12 +166,60 @@
             this.label1.TabIndex = 73;
             this.label1.Text = "Карта здоровья учеников 8 класса";
             // 
+            // karta_health8TableAdapter1
+            // 
+            this.karta_health8TableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.namestudentDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.fKstudents8kartahealth8BindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(722, 52);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(473, 71);
+            this.dataGridView2.TabIndex = 77;
+            // 
+            // namestudentDataGridViewTextBoxColumn
+            // 
+            this.namestudentDataGridViewTextBoxColumn.DataPropertyName = "name_student";
+            this.namestudentDataGridViewTextBoxColumn.HeaderText = "Имя ученика";
+            this.namestudentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namestudentDataGridViewTextBoxColumn.Name = "namestudentDataGridViewTextBoxColumn";
+            // 
+            // fKstudents8kartahealth8BindingSource
+            // 
+            this.fKstudents8kartahealth8BindingSource.DataMember = "FK_students8_karta_health8";
+            this.fKstudents8kartahealth8BindingSource.DataSource = this.kartahealth8BindingSource1;
+            // 
+            // students8TableAdapter
+            // 
+            this.students8TableAdapter.ClearBeforeFill = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(740, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(437, 58);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Если поле \"Имя ученика\" заполнено, \r\nто удаление записи невозможно!";
+            // 
             // FormHealt8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 719);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.karta_health8DataGridView);
             this.Controls.Add(this.buttonDellete);
@@ -159,8 +229,12 @@
             this.Text = "Карта здоровья 8 класса";
             this.Load += new System.EventHandler(this.FormHealt8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.karta_health8DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartahealth8BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klassDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kartahealth8BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klassDSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKstudents8kartahealth8BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +253,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grouphealthDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn diagnozDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
+        private KlassDataSet klassDataSet;
+        private System.Windows.Forms.BindingSource kartahealth8BindingSource1;
+        private KlassDataSetTableAdapters.karta_health8TableAdapter karta_health8TableAdapter1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource fKstudents8kartahealth8BindingSource;
+        private KlassDataSetTableAdapters.students8TableAdapter students8TableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namestudentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label2;
     }
 }

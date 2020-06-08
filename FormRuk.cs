@@ -54,5 +54,10 @@ namespace Klass
             me.Show();
             this.Hide();
         }
+
+        private void klass_rukBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }

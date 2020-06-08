@@ -30,6 +30,8 @@ namespace Klass
 
         private void FormRoditeli5_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.students5". При необходимости она может быть перемещена или удалена.
+            this.students5TableAdapter.Fill(this.klassDSet.students5);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.roditeli5". При необходимости она может быть перемещена или удалена.
             this.roditeli5TableAdapter.Fill(this.klassDSet.roditeli5);
 

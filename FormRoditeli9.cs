@@ -27,6 +27,10 @@ namespace Klass
 
         private void FormRoditeli9_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.students9". При необходимости она может быть перемещена или удалена.
+            this.students9TableAdapter.Fill(this.klassDataSet.students9);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDataSet.roditeli9". При необходимости она может быть перемещена или удалена.
+            this.roditeli9TableAdapter1.Fill(this.klassDataSet.roditeli9);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "klassDSet.roditeli9". При необходимости она может быть перемещена или удалена.
             this.roditeli9TableAdapter.Fill(this.klassDSet.roditeli9);
 
@@ -34,8 +38,16 @@ namespace Klass
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            roditeli9TableAdapter.Update(klassDSet);
+            try { 
+            roditeli9TableAdapter1.Update(klassDataSet);
             MessageBox.Show("Изменения сохранены в базе данных");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Возникло исключение!");
+
+            }
         }
 
         private void buttonDellete_Click(object sender, EventArgs e)
